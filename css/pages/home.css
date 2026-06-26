@@ -1,0 +1,224 @@
+.home-hero {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: var(--space-6);
+  padding: 164px var(--space-5) 72px;
+  background-image:
+    linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
+    radial-gradient(circle at 48% 20%, rgba(255, 213, 77, 0.34), rgba(255, 213, 77, 0) 48%),
+    url("../../images/angkor-wat-yellow-dawn-bright-real.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-text .eyebrow {
+  width: fit-content;
+  margin: 0 auto var(--space-6);
+  padding: 12px 28px;
+  color: var(--color-primary);
+  background-color: rgba(18, 184, 134, 0.18);
+  border: 1px solid rgba(18, 184, 134, 0.55);
+  border-radius: var(--radius-pill);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.hero-text h1 {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: clamp(48px, 7vw, 84px);
+  font-weight: 900;
+  line-height: 1.06;
+}
+
+.hero-text p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.hero-buttons .button {
+  min-height: 58px;
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: var(--space-7);
+  width: min(calc(100% - 40px), 860px);
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 800;
+}
+
+.home-stats div {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-stats div::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  flex: 0 0 auto;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(18, 184, 134, 0.12);
+}
+
+.home-stats span {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 900;
+}
+
+.home-hero .form-panel {
+  width: min(calc(100% - 40px), 1060px);
+  margin: var(--space-5) auto 0;
+}
+
+.intro-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: var(--space-7);
+}
+
+.intro-media {
+  position: relative;
+}
+
+.intro-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  filter: brightness(1.12) saturate(1.16) contrast(1.02);
+}
+
+.experience-box {
+  position: absolute;
+  right: var(--space-5);
+  bottom: calc(var(--space-5) * -1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+  box-shadow: 0 18px 40px rgba(18, 184, 134, 0.3);
+}
+
+.experience-box strong {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.experience-box span {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.visit-band {
+  color: #ffffff;
+  background:
+    linear-gradient(90deg, rgba(3, 20, 21, 0.72), rgba(14, 78, 66, 0.56)),
+    radial-gradient(circle at 74% 18%, rgba(255, 213, 77, 0.32), rgba(255, 213, 77, 0) 50%),
+    url("../../images/angkor-wat-yellow-dawn-bright-real.jpg");
+  background-position: center 34%;
+  background-size: cover;
+}
+
+.visit-band__inner {
+  width: min(calc(100% - 40px), var(--container));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.visit-band h2,
+.visit-band p {
+  color: #ffffff;
+}
+
+.visit-band p {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 860px) {
+  .home-hero {
+    min-height: auto;
+    padding-top: 88px;
+  }
+
+  .home-stats {
+    grid-template-columns: repeat(2, auto);
+    gap: var(--space-4) var(--space-6);
+  }
+
+  .intro-layout,
+  .visit-band__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-band__inner {
+    justify-items: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-hero {
+    padding: 76px var(--space-4) 96px;
+  }
+
+  .hero-text p {
+    font-size: 17px;
+  }
+
+  .home-stats {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .experience-box {
+    position: static;
+    width: 100%;
+    margin-top: var(--space-3);
+  }
+}

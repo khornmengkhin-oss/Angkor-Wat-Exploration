@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angkor Wat Digital Guide</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="index.html" aria-label="Angkor Wat Digital Guide home">
+        <span class="site-logo__name">Angkor Wat</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="pages/history.html">History</a>
+        <a href="pages/architecture.html">Architecture</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/visit.html">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="home-hero">
+      <div class="hero-text">
+        <p class="eyebrow">Kingdom of Wonder</p>
+        <h1>Journey Through Angkor Wat</h1>
+        <p>
+          A digital guide for discovering the history, sacred architecture, carved stories,
+          and practical travel details of Cambodia's most iconic temple.
+        </p>
+        <p class="hero-buttons">
+          <a class="button" href="pages/history.html">Start Exploring</a>
+          <a class="button button--ghost" href="pages/visit.html">Plan Your Visit</a>
+        </p>
+      </div>
+
+      <form class="form-panel" aria-label="Explore Angkor Wat topics">
+        <div class="form-field">
+          <label for="topic">Destination</label>
+          <select id="topic" name="topic">
+            <option>Angkor Wat temple</option>
+            <option>Temple history</option>
+            <option>Architecture</option>
+            <option>Photo spots</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="visit-date">Visit date</label>
+          <input id="visit-date" name="visit-date" type="date">
+        </div>
+        <div class="form-field">
+          <label for="pace">Guide focus</label>
+          <select id="pace" name="pace">
+            <option>Sunrise route</option>
+            <option>Half day</option>
+            <option>Full day</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="travelers">Visitors</label>
+          <input id="travelers" name="travelers" type="number" min="1" value="2">
+        </div>
+        <button class="button" type="submit">Find Route</button>
+      </form>
+
+      <div class="home-stats" aria-label="Angkor Wat guide highlights">
+        <div><span>900+</span> Years of history</div>
+        <div><span>5</span> Central towers</div>
+        <div><span>UNESCO</span> Heritage site</div>
+        <div><span>12th</span> Century landmark</div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="page-shell intro-layout">
+        <div class="intro-media">
+          <img src="images/Angkor Wat Temple - Siem Reap Province, Cambodia.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
+          <div class="experience-box">
+            <strong>12</strong>
+            <span>Core temple<br>topics</span>
+          </div>
+        </div>
+        <div class="intro-copy">
+          <p class="eyebrow">Who we are</p>
+          <h2>A clear starting point for your Angkor Wat project</h2>
+          <p>
+            This guide brings the essential parts of Angkor Wat into one simple website:
+            history, religious meaning, architectural features, gallery moments, and visitor
+            planning notes.
+          </p>
+          <p>
+            The layout now uses shared root styles, reusable components, and a travel-guide
+            visual system inspired by the reference while keeping the content focused on
+            Cambodia and Angkor Wat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space page-shell">
+      <div class="stats-band">
+        <div class="stat-item">
+          <strong>420+</strong>
+          <span>Carved scenes</span>
+        </div>
+        <div class="stat-item">
+          <strong>30+</strong>
+          <span>Nearby temples</span>
+        </div>
+        <div class="stat-item">
+          <strong>5M+</strong>
+          <span>Stone blocks</span>
+        </div>
+        <div class="stat-item">
+          <strong>4.9</strong>
+          <span>Guide clarity</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space page-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Explore the guide</p>
+        <h2>Everything your project needs to begin</h2>
+        <p>Use these pages as the foundation for a richer Angkor Wat travel and culture website.</p>
+      </div>
+      <div class="card-grid">
+        <article class="info-card">
+          <span class="icon-mark">H</span>
+          <h3>History timeline</h3>
+          <p>Learn how Angkor Wat was built, changed religion, and became a national symbol.</p>
+        </article>
+        <article class="info-card">
+          <span class="icon-mark">A</span>
+          <h3>Temple architecture</h3>
+          <p>Understand the towers, galleries, moat, causeway, and mountain-temple layout.</p>
+        </article>
+        <article class="info-card">
+          <span class="icon-mark">V</span>
+          <h3>Visit planning</h3>
+          <p>Prepare with sunrise advice, respectful dress notes, route ideas, and travel tips.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-space visit-band">
+      <div class="visit-band__inner">
+        <div>
+          <p class="eyebrow">Ready to explore</p>
+          <h2>Plan a memorable walk through Angkor Wat.</h2>
+          <p>Start with the visitor page for practical notes before expanding the site with maps, route cards, and booking ideas.</p>
+        </div>
+        <a class="button" href="pages/visit.html">Open Visit Guide</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <h2>Angkor Wat Guide</h2>
+        <p>A student-friendly digital guide for Cambodia's most treasured temple complex.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="pages/history.html">History</a></li>
+          <li><a href="pages/architecture.html">Architecture</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul>
+          <li><a href="pages/visit.html">Planning tips</a></li>
+          <li><a href="pages/visit.html">Opening notes</a></li>
+          <li><a href="pages/visit.html">Respectful travel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Project</h3>
+        <p>Built with HTML and CSS using shared root elements and reusable components.</p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 Angkor Wat Digital Guide. Educational project website.</p>
+    </div>
+  </footer>
+</body>
+</html>

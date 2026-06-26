@@ -1,0 +1,112 @@
+/* Shared reset, theme variables, and base element styles */
+
+:root {
+  --color-ink: #111827;
+  --color-text: #354052;
+  --color-muted: #6b7280;
+  --color-soft: #ffffff;
+  --color-surface: white;
+  --color-border: #dfe7e2;
+  --color-overlay: rgba(3, 18, 19, 0.42);
+  --color-overlay-strong: rgba(3, 18, 19, 0.82);
+  --color-primary: #12b886;
+  --color-primary-dark: #079669;
+  --color-secondary: #d79332;
+  --color-temple: #243b35;
+  --color-footer: #031415;
+
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --container: 1120px;
+  --container-wide: 1280px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 18px 45px rgba(17, 24, 39, 0.08);
+  --shadow-strong: 0 24px 70px rgba(3, 20, 21, 0.22);
+  --transition: 180ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-soft);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  line-height: 1.12;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 86px);
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+h3 {
+  font-size: clamp(21px, 2vw, 28px);
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: color var(--transition), background-color var(--transition), border-color var(--transition);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: var(--color-primary-dark);
+}
