@@ -1,5 +1,80 @@
 /* this file is only for history page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 
-main p {
-  color: #555555;
+body {
+  color: #1a1a1a;
+  line-height: 1.7;
+  background: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 60px 0 50px;
+}
+
+.divider {
+  border: none;
+  border-top: 2.5px solid #1a1a1a;
+  margin: 60px 0;
+}
+/*jg dak background pi kroy*/
+.timeline-block {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.timeline-image,
+.timeline-text {
+  flex: 1;
+}
+
+.timeline-text h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.timeline-text p {
+  font-size: 14px;
+  color: #444;
+}
+
+.timeline--reverse .timeline-block {
+  flex-direction: row-reverse;
+}
+
+/* nv tver media tt*/
+
+@media (max-width: 900px) {
+
+} 
+
+@media (max-width: 600px) {
+ 
+
 }
