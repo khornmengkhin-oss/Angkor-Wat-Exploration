@@ -13,7 +13,8 @@
 }
 
 .hero-text {
-  width: min(100%, 900px);
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: #ffffff;
   text-align: center;
@@ -22,7 +23,7 @@
 .hero-text .eyebrow {
   width: fit-content;
   margin: 0 auto var(--space-6);
-  padding: 12px 28px;
+  padding: 7px 15px;
   color: var(--color-primary);
   background-color: rgba(18, 184, 134, 0.18);
   border: 1px solid rgba(18, 184, 134, 0.55);
