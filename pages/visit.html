@@ -64,6 +64,38 @@
         </article>
       </div>
     </section>
+
+    <section class="section-space page-shell">
+
+      <form class="form-panel" aria-label="Explore Angkor Wat topics">
+        <div class="form-field">
+          <label for="topic">Destination</label>
+          <select id="topic" name="topic">
+            <option>Angkor Wat temple</option>
+            <option>Temple history</option>
+            <option>Architecture</option>
+            <option>Photo spots</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="visit-date">Visit date</label>
+          <input id="visit-date" name="visit-date" type="date">
+        </div>
+        <div class="form-field">
+          <label for="pace">Guide focus</label>
+          <select id="pace" name="pace">
+            <option>Sunrise route</option>
+            <option>Half day</option>
+            <option>Full day</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="travelers">Visitors</label>
+          <input id="travelers" name="travelers" type="number" min="1" value="2">
+        </div>
+        <button class="button" type="submit">Find Route</button>
+      </form>
+    </section>
   </main>
 
     <footer class="site-footer">

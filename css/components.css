@@ -62,12 +62,12 @@
 }
 
 .section-space {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
 }
 
 .section-heading {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto var(--space-7);
   text-align: center;
 }
@@ -274,7 +274,7 @@
   color: rgba(255, 255, 255, 0.58);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
   .card-grid,
   .stats-band {
     grid-template-columns: repeat(2, 1fr);
@@ -289,7 +289,7 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 600px) {
   .section-space {
     padding-top: var(--space-7);
     padding-bottom: var(--space-7);
