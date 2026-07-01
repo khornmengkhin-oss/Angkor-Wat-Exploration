@@ -16,9 +16,9 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  padding: 18px 24px 18px 28px;
+  padding: 12px 20px 12px 26px;
   color: #ffffff;
-  background: rgba(8, 15, 16, 0.76);
+  background: rgba(8, 15, 16, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-pill);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
@@ -43,14 +43,13 @@
 }
 
 .site-nav {
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: flex-end;
   gap: var(--space-2);
 }
 
 .site-nav a {
-  padding: 10px 15px;
+  padding: 7px 15px;
   color: rgba(255, 255, 255, 0.9);
   border-radius: var(--radius-pill);
   font-size: 16px;
@@ -132,7 +131,7 @@
   text-align: center;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   .site-header {
     position: static;
     padding: var(--space-3);
@@ -161,7 +160,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .site-header {
     padding: 0;
   }
