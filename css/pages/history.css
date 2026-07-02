@@ -5,6 +5,10 @@
   box-sizing: border-box; 
 }
 
+h3 {
+  text-align: center;
+}
+
 body {
   color: #1a1a1a;
   line-height: 1.7;
