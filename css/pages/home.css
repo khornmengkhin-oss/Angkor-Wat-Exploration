@@ -141,6 +141,13 @@
   filter: brightness(1.12) saturate(1.16) contrast(1.02);
 }
 
+.intro-big {
+  height: 70vh;
+  background-image: url("../../images/the king soraya.png");
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
 .experience-box {
   position: absolute;
   right: var(--space-5);
@@ -181,7 +188,7 @@
     linear-gradient(90deg, rgba(3, 20, 21, 0.72), rgba(14, 78, 66, 0.56)),
     radial-gradient(circle at 74% 18%, rgba(255, 213, 77, 0.32), rgba(255, 213, 77, 0) 50%),
     url("../../images/The god temple-Angkor Wat.png");
-  background-position: center 28%;
+  background-position: center 27%;
   background-size: cover;
 }
 
