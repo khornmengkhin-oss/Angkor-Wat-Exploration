@@ -6,6 +6,7 @@
 }
 
 h3 {
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -13,6 +14,13 @@ body {
   color: #1a1a1a;
   line-height: 1.7;
   background: #ffffff;
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-soft);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -71,6 +79,31 @@ a {
 .timeline--reverse .timeline-block {
   flex-direction: row-reverse;
 }
+
+.showcase-card {
+  position: relative;
+  min-height: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-strong);
+  isolation: isolate;
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+ 
+.link .arrow {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+ 
+.link:hover .arrow {
+  transform: translateX(6px);       
+}
+ 
 
 @media screen and (max-width: 900px) {
 
