@@ -78,6 +78,10 @@
   width: max(600px);
 }
 
+#intro-explore {
+  margin: 30px auto 0;
+}
+
 .home-stats {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -165,6 +169,10 @@
 
 .intro-copy p:last-child {
   margin-bottom: 0;
+}
+
+.image-card--middle {
+  transform: translateY(-30px);
 }
 
 .visit-band {
