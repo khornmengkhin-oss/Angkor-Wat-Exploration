@@ -15,10 +15,10 @@
   --color-temple: #243b35;
   --color-footer: #031415;
 
-  --font-heading: Georgia, "Times New Roman", serif;
-  --font-body: Arial, Helvetica, sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Source Serif 4', serif;
 
-  --container: 1120px;
+  --container: 1250px;
   --container-wide: 1280px;
   --space-1: 4px;
   --space-2: 8px;
@@ -65,6 +65,7 @@ h3 {
   color: var(--color-ink);
   font-family: var(--font-heading);
   line-height: 1.12;
+  font-weight: 700;
 }
 
 h1 {
