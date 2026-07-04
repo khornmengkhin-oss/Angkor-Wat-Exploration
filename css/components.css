@@ -83,8 +83,8 @@
   position: relative;
   isolation: isolate;
   color: #ffffff;
-  background-image: linear-gradient(var(--color-overlay), var(--color-overlay)), var(--hero-image, url("../images/angkor-wat-yellow-dawn-bright-real.jpg"));
-  background-position: center;
+  background-image: linear-gradient(var(--color-overlay), var(--color-overlay)), url("../images/The god temple-Angkor Wat.png");
+  background-position: center 40%;
   background-size: cover;
 }
 
@@ -93,7 +93,7 @@
   display: grid;
   place-items: center;
   padding: 150px var(--space-5) 92px;
-  background-position: center 34%;
+  background-position: center 22%;
   text-align: center;
 }
 
