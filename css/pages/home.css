@@ -6,7 +6,6 @@
   padding: 164px var(--space-5) 72px;
   background-image:
     linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
-    radial-gradient(circle at 48% 20%, rgba(255, 213, 77, 0.34), rgba(255, 213, 77, 0) 48%),
     url("../../images/The god temple-Angkor Wat.png");
   background-position: center;
   background-size: cover;
@@ -158,6 +157,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius-md);
   gap: var(--space-6);
   width: 100%;
   margin-bottom: var(--space-7);
@@ -181,7 +181,7 @@
   aspect-ratio: 16 / 9;
   height: auto;
   border: 0;
-  border-radius: var(--radius-md);
+
   box-shadow: var(--shadow-soft);
 }
 
@@ -230,71 +230,6 @@
   transform: translateY(20px);
 }
 
-.unesco-banner {
-  position: relative;
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  align-items: center;
-  gap: var(--space-6);
-  width: min(calc(100vw - 48px), 1550px);
-  margin-top: var(--space-7);
-  margin-left: 50%;
-  padding: var(--space-6);
-  transform: translateX(-50%);
-  overflow: hidden;
-  color: #ffffff;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-soft);
-}
-
-.unesco-banner::after {
-  content: "";
-  position: absolute;
-  right: -54px;
-  top: -70px;
-  width: 190px;
-  height: 190px;
-  background-color: rgba(255, 255, 255, 0.12);
-  border-radius: 50%;
-}
-
-.unesco-banner__logo {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  min-height: 150px;
-  padding: var(--space-5);
-  background-color: #ffffff;
-  border-radius: var(--radius-sm);
-}
-
-.unesco-banner__logo img {
-  max-height: 105px;
-  width: auto;
-}
-
-.unesco-banner__text {
-  position: relative;
-  z-index: 1;
-}
-
-.unesco-banner__text h3 {
-  margin-bottom: var(--space-3);
-  color: #ffffff;
-  font-family: var(--font-body);
-  font-size: clamp(24px, 3vw, 34px);
-  font-weight: 900;
-}
-
-.unesco-banner__text p {
-  max-width: 780px;
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 18px;
-}
-
 .experience-box {
   position: absolute;
   right: var(--space-5);
@@ -303,10 +238,10 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
   color: #ffffff;
   background-color: var(--color-primary);
-  border-radius: var(--radius-md);
-  box-shadow: 0 18px 40px rgba(18, 184, 134, 0.3);
+  box-shadow: var(--shadow-strong);
 }
 
 .experience-box strong {
@@ -323,10 +258,6 @@
 
 .intro-copy p:last-child {
   margin-bottom: 0;
-}
-
-.image-card--middle {
-  transform: translateY(-30px);
 }
 
 .visit-band {
@@ -363,6 +294,10 @@
   scroll-margin-top: 120px;
 }
 
+.page-shell__gallery {
+  padding: 20px 20px;
+}
+
 .image-showcase {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -372,7 +307,6 @@
 .showcase-card {
   position: relative;
   min-height: 300px;
-  border-radius: 18px;
   overflow: hidden;
   box-shadow: var(--shadow-strong);
   isolation: isolate;
@@ -452,6 +386,10 @@
   line-height: 1;
 }
 
+.background-section {
+  background-color: var(--color-bacground-add);
+  padding: var(--space-8)
+}
 @media (max-width: 900px) {
   .home-hero {
     min-height: auto;

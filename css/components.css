@@ -62,13 +62,13 @@
 }
 
 .section-space {
-  padding-top: var(--space-7);
-  padding-bottom: var(--space-7);
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
 }
 
 .section-heading {
   max-width: 860px;
-  margin: 0 auto var(--space-8);
+  margin: 0 auto var(--space-7);
   text-align: center;
 }
 
@@ -135,8 +135,8 @@
   padding: var(--space-6);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-left: 5px solid rgba(18, 184, 134, 0.35);
   border-radius: var(--radius-md);
+  border-bottom: 7px solid var(--color-primary-dark);
   box-shadow: var(--shadow-soft);
 }
 
@@ -154,10 +154,8 @@
 .image-card {
   overflow: hidden;
   background-color: var(--color-surface);
-  border: 1px solid var(--color-primary);
-  border-bottom: 4px solid var(--color-primary);
-  border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-primary-dark);
 }
 
 .image-card img {
