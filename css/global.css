@@ -14,6 +14,7 @@
   --color-secondary: #d79332;
   --color-temple: #243b35;
   --color-footer: #031415;
+  --color-bacground-add: #705c46f5;
 
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Source Serif 4', serif;
@@ -45,16 +46,21 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-footer);
 }
 
 body {
   margin: 0;
   color: var(--color-text);
-  background-color: var(--color-soft);
+  background-color: var(--color-footer);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
+}
+
+main {
+  background-color: var(--color-soft);
 }
 
 h1,

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/home.css">
+  <script src="js/home.js" defer></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -158,24 +159,54 @@
     </section>
 
     <section class="section-space page-shell">
-      <div class="section-heading">
-        <p class="eyebrow">BEGIN YOUR EXPLORATION</p>
-        <h2>Everything your project needs to begin</h2>
-        <p>Use these pages as the foundation for a richer Angkor Wat travel and culture website.</p>
+        <div class="section-heading">
+        <p class="eyebrow">DIVE DEEPER INTO ANGKOR WAT</p>
+        <h2>Explore the Timeless World of Angkor Wat</h2>
+        <p>Discover its history, sacred architecture, and everything you need to plan an unforgettable visit.</p>
+        </div>
+        <div class="video-showcase" aria-label="Angkor Wat video carousel">
+        <button class="video-arrow video-arrow--prev" type="button" aria-label="Previous video">&lt;</button>
+        <div class="video-carousel">
+          <div class="video-tamplate video-template is-active">
+            <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/EQYJ8-o1K0w?si=FkmaOtvyr71sYbJy" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+          </div>
+          <div class="video-tamplate video-template">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C5jpbwizxBs?si=4GPk4PL4OQAvv0pM" 
+             title="YouTube video player" 
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" 
+             allowfullscreen></iframe>
+          </div>
+          <div class="video-tamplate video-template">
+            <iframe width="560" 
+             height="315" 
+             src="https://www.youtube.com/embed/2UPuVft7swY?si=lmDDO8bfupCQayg0" 
+             title="YouTube video player" 
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="video-arrow video-arrow--next" type="button" aria-label="Next video">&gt;</button>
       </div>
       <div class="card-grid">
         <article class="info-card">
-          <span class="icon-mark">H</span>
           <h3>History timeline</h3>
           <p>Learn how Angkor Wat was built, changed religion, and became a national symbol.</p>
         </article>
-        <article class="info-card">
-          <span class="icon-mark">A</span>
+        <article class="info-card info-card--middle">
           <h3>Temple architecture</h3>
           <p>Understand the towers, galleries, moat, causeway, and mountain-temple layout.</p>
         </article>
         <article class="info-card">
-          <span class="icon-mark">V</span>
           <h3>Visit planning</h3>
           <p>Prepare with sunrise advice, respectful dress notes, route ideas, and travel tips.</p>
         </article>
@@ -183,76 +214,40 @@
     </section>
 
     <section id="temple-showcase" class="section-space page-shell">
+      <div class="section-heading">
+        <p class="eyebrow">FOR FUTHER INFORMATION</p>
+        <h2>Explore the Timeless World of Angkor Wat</h2>
+        <p>Discover its history, sacred architecture, and everything you need to plan an unforgettable visit.</p>
+      </div>
       <div class="image-showcase">
         <article class="showcase-card">
-          <img src="images/Angkor-painting.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Trending</span>
-            <span>Scenic</span>
-          </div>
+          <img src="images/the king gose to the war.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
           <div class="card-body">
-            <p>12 discoveries</p>
             <h3>Sunrise at Angkor Wat</h3>
             <a href="pages/gallery.html">Discover More</a>
           </div>
         </article>
         <article class="showcase-card">
-          <img src="images/Cambodia Poster Design.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Top rated</span>
-          </div>
+          <img src="images/ Angkor Wat, Siem Reap_ Cambodia.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
           <div class="card-body">
-            <p>8 highlights</p>
             <h3>Golden Temple View</h3>
           </div>
         </article>
         <article class="showcase-card">
-          <img src="images/ Angkor Wat, Siem Reap_ Cambodia.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Heritage</span>
-          </div>
-          <div class="card-body">
-            <p>5 stories</p>
-            <h3>Ancient Khmer Details</h3>
-          </div>
-        </article>
-        <article class="showcase-card">
-          <img src="images/angkor-wat-golden-temple.jpg" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Exclusive</span>
-            <span>Adventure</span>
-          </div>
-          <div class="card-body">
-            <p>9 routes</p>
-            <h3>Pathways Through the Temple</h3>
-            <a href="pages/visit.html">Plan a Visit</a>
-          </div>
-        </article>
-        <article class="showcase-card">
           <img src="images/Angkor Halls and Apsaras copy.png" alt="Stone corridor at Angkor Wat with apsara carvings">
-          <div class="showcase-card__badges">
-            <span>Tropical</span>
-            <span>Featured</span>
-          </div>
           <div class="card-body">
-            <p>17 details</p>
             <h3>Halls and Apsaras</h3>
           </div>
         </article>
         <article class="showcase-card">
-          <img src="images/angkor-wat-greenery.jpg" alt="Angkor Wat temple surrounded by green trees and ancient stone">
-          <div class="showcase-card__badges">
-            <span>Serene</span>
-            <span>Must visit</span>
-          </div>
+          <img src="images/Angkor wat complex temple.png" alt="Angkor Wat temple surrounded by green trees and ancient stone">
           <div class="card-body">
-            <p>11 moments</p>
             <h3>Green Paths Around Angkor</h3>
             <a href="pages/visit.html">Discover More</a>
           </div>
         </article>
       </div>
-    </section>`
+    </section>
 
     <section class="section-space visit-band">
       <div class="visit-band__inner">

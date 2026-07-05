@@ -148,6 +148,82 @@
   background-position: center 35%;
   background-repeat: no-repeat;
 }
+
+.video-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  width: 100%;
+  margin-bottom: var(--space-7);
+}
+
+.video-carousel {
+  width: min(100%, 920px);
+}
+
+.video-template {
+  display: none;
+}
+
+.video-template.is-active {
+  display: block;
+}
+
+.video-template iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.video-arrow {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.08)),
+    rgba(3, 20, 21, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  box-shadow:
+    0 16px 36px rgba(3, 20, 21, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.36);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 1px 8px rgba(3, 20, 21, 0.45);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.video-arrow:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.12)),
+    rgba(18, 184, 134, 0.28);
+  border-color: rgba(255, 255, 255, 0.62);
+  box-shadow:
+    0 18px 42px rgba(18, 184, 134, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.48);
+  transform: translateY(-2px);
+}
+
+.video-arrow:focus-visible {
+  outline: 3px solid rgba(255, 213, 77, 0.85);
+  outline-offset: 4px;
+}
+
+.info-card--middle {
+  transform: translateY(20px);
+}
 .experience-box {
   position: absolute;
   right: var(--space-5);
@@ -183,12 +259,12 @@
 }
 
 .visit-band {
+  width: 100vw;
   color: #ffffff;
   background:
-    linear-gradient(90deg, rgba(3, 20, 21, 0.72), rgba(14, 78, 66, 0.56)),
-    radial-gradient(circle at 74% 18%, rgba(255, 213, 77, 0.32), rgba(255, 213, 77, 0) 50%),
+    linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
     url("../../images/The god temple-Angkor Wat.png");
-  background-position: center 27%;
+  background-position: center 27.5%;
   background-size: cover;
 }
 
@@ -232,7 +308,9 @@
 }
 
 .showcase-card:nth-child(1),
-.showcase-card:nth-child(2) {
+.showcase-card:nth-child(2),
+.showcase-card:nth-child(3),
+.showcase-card:nth-child(4) {
   min-height: 430px;
 }
 
@@ -275,36 +353,6 @@
     linear-gradient(90deg, rgba(3, 18, 19, 0.3), rgba(3, 18, 19, 0));
 }
 
-.showcase-card__badges {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.showcase-card__badges span {
-  min-height: 30px;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 14px;
-  color: #ffffff;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-pill);
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.showcase-card__badges span:nth-child(2) {
-  background-color: rgba(255, 255, 255, 0.24);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(10px);
-}
 
 .card-body {
   position: absolute;
@@ -410,5 +458,19 @@
     position: static;
     width: 100%;
     margin-top: var(--space-3);
+  }
+
+  .video-showcase {
+    gap: var(--space-2);
+  }
+
+  .video-carousel {
+    width: calc(100% - 112px);
+  }
+
+  .video-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
   }
 }

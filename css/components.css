@@ -151,18 +151,6 @@
   color: var(--color-muted);
 }
 
-.icon-mark {
-  width: 46px;
-  height: 46px;
-  display: inline-grid;
-  place-items: center;
-  margin-bottom: var(--space-5);
-  color: var(--color-primary);
-  border: 2px solid rgba(18, 184, 134, 0.24);
-  border-radius: 50%;
-  font-weight: 900;
-}
-
 .image-card {
   overflow: hidden;
   background-color: var(--color-surface);
