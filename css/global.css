@@ -9,16 +9,17 @@
   --color-border: #dfe7e2;
   --color-overlay: rgba(3, 18, 19, 0.42);
   --color-overlay-strong: rgba(3, 18, 19, 0.82);
-  --color-primary: #12b886;
-  --color-primary-dark: #079669;
+  --color-primary: #BB9836;
+  --color-primary-dark: #C9A84C;
   --color-secondary: #d79332;
   --color-temple: #243b35;
   --color-footer: #031415;
+  --color-bacground-add: #1A1411;
 
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Source Serif 4', serif;
 
-  --container: 1250px;
+  --container: 1400px;
   --container-wide: 1280px;
   --space-1: 4px;
   --space-2: 8px;
@@ -45,16 +46,21 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-footer);
 }
 
 body {
   margin: 0;
   color: var(--color-text);
-  background-color: var(--color-soft);
+  background-color: var(--color-footer);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
+}
+
+main {
+  background-color: var(--color-soft);
 }
 
 h1,

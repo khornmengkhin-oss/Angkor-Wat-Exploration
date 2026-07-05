@@ -62,13 +62,13 @@
 }
 
 .section-space {
-  padding-top: var(--space-7);
-  padding-bottom: var(--space-7);
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
 }
 
 .section-heading {
   max-width: 860px;
-  margin: 0 auto var(--space-8);
+  margin: 0 auto var(--space-7);
   text-align: center;
 }
 
@@ -83,8 +83,8 @@
   position: relative;
   isolation: isolate;
   color: #ffffff;
-  background-image: linear-gradient(var(--color-overlay), var(--color-overlay)), var(--hero-image, url("../images/angkor-wat-yellow-dawn-bright-real.jpg"));
-  background-position: center;
+  background-image: linear-gradient(var(--color-overlay), var(--color-overlay)), url("../images/The god temple-Angkor Wat.png");
+  background-position: center 40%;
   background-size: cover;
 }
 
@@ -93,7 +93,7 @@
   display: grid;
   place-items: center;
   padding: 150px var(--space-5) 92px;
-  background-position: center 34%;
+  background-position: center 22%;
   text-align: center;
 }
 
@@ -135,8 +135,8 @@
   padding: var(--space-6);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-left: 5px solid rgba(18, 184, 134, 0.35);
   border-radius: var(--radius-md);
+  border-bottom: 7px solid var(--color-primary-dark);
   box-shadow: var(--shadow-soft);
 }
 
@@ -151,25 +151,11 @@
   color: var(--color-muted);
 }
 
-.icon-mark {
-  width: 46px;
-  height: 46px;
-  display: inline-grid;
-  place-items: center;
-  margin-bottom: var(--space-5);
-  color: var(--color-primary);
-  border: 2px solid rgba(18, 184, 134, 0.24);
-  border-radius: 50%;
-  font-weight: 900;
-}
-
 .image-card {
   overflow: hidden;
   background-color: var(--color-surface);
-  border: 1px solid var(--color-primary);
-  border-bottom: 4px solid var(--color-primary);
-  border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-primary-dark);
 }
 
 .image-card img {

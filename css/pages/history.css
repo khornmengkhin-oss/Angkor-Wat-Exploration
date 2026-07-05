@@ -29,6 +29,19 @@ a {
   color: inherit;
 }
 
+<<<<<<< HEAD
+=======
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.history-hero p {
+  max-width: 1100px;
+}
+
+>>>>>>> ed9b5d6d0bdeeda1b582a287274214be2c1c781b
 .section-title {
   text-align: center;
   font-size: 34px;

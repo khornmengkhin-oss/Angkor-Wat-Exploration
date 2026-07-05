@@ -66,7 +66,6 @@ img.site-logo__name {
 .site-nav a {
   padding: 7px 15px;
   color: rgba(255, 255, 255, 0.9);
-  border-radius: var(--radius-pill);
   font-size: 16px;
   font-weight: 800;
   line-height: 1;
@@ -76,7 +75,6 @@ img.site-logo__name {
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
   color: var(--color-primary);
-  background-color: rgba(18, 184, 134, 0.12);
 }
 
 .page-shell {

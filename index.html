@@ -8,15 +8,11 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/home.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-
+  <script src="js/home.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
   <header class="site-header">
@@ -42,7 +38,7 @@
         <h1>Angkor Wat, the Lost Empier</h1>
         <p>
           Journey through Cambodia's most iconic temple, discover its history,
-           sacred architecture, ancient carvings, and practical travel guidance.
+          sacred architecture, ancient carvings, and practical travel guidance.
         </p>
         <p class="hero-buttons">
           <a class="button" href="pages/history.html">Start Exploring</a>
@@ -77,26 +73,18 @@
             architectural achievements.
           </p>
         </div>
-        <div>
+        <div class="intro-logo">
           <img class="image-about" src="images/Angkor aret and history.png" alt="The logo of our organization">
         </div>
       </div>
     </section>
 
-    <section class="intro-big">
-    </section>
-
-    <section class="section-space page-shell">
-      <div class="section-heading" id="intro-explore">
-        <p class="eyebrow">DISCOVER THE WONDERS OF THE KHMER EMPIRE</p>
-        <h2>Begin Your Journey Through Angkor Wat</h2>
-      </div>
-    </section>
+    <section class="intro-big"></section>
 
     <section class="section-space">
       <div class="page-shell intro-layout">
         <div class="intro-media">
-          <img src="images/Angkor Wat Temple - Siem Reap Province, Cambodia.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
+          <img src="images/angkor-wat-yellow-dawn.jpg" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
           <div class="experience-box">
             <strong>12</strong>
             <span>Secrets to<br>Discover</span>
@@ -106,77 +94,128 @@
           <p class="eyebrow">BEYOND THE GATES</p>
           <h2>Step Into the Mystery of Angkor Wat</h2>
           <p>
-            Behind its silent stone walls lies more than a temple. Angkor Wat holds forgotten 
+            Behind its silent stone walls lies more than a temple. Angkor Wat holds forgotten
             stories of kings, sacred beliefs, celestial towers, and carvings that have watched
-             over Cambodia for centuries.
+            over Cambodia for centuries.
           </p>
           <p>
             Begin at the western causeway and follow the path deeper into an ancient world—where
-             every corridor, shadow, and stone detail invites you to discover what remains unseen.
+            every corridor, shadow, and stone detail invites you to discover what remains unseen.
           </p>
-        </div>
+      </div>
       </div>
     </section>
-
-    <section>
+    
+    <section class="background-section">
       <div class="section-space page-shell">
-        <div class="section-heading">
-          <span class="eyebrow">BEGIN YOUR EXPLORATION</span>
-          <h2>Footsteps of the Khmer Empire</h2>
-        </div>
         <div class="card-grid">
-        <article class="image-card">
-          <img src="images/Khmer Angkor king copy.png" alt="the king of Angkor Wat with the most aura">
-          <div class="image-card__body">
-            <h3>Echoes of an Empire</h3>
-            <p>Travel back to the Khmer Empire and uncover the rulers, beliefs, and events that 
-              shaped Angkor Wat into one of the world's greatest monuments.
-            </p>
-          </div>
-        </article>
-        <article class="image-card image-card--middle">
-          <img src="images/The Temples of Angkor Wat.png" alt="Cambodia travel scene">
-          <div class="image-card__body">
-            <h3>Secrets Written in Stone</h3>
-            <p>From the five sacred towers to hidden galleries and detailed 
-              bas-reliefs, every structure reveals a deeper meaning.
-            </p>
-          </div>
-        </article>
-        <article class="image-card">
-          <img src="images/Cambodge.png" alt="UNESCO logo">
-          <div class="image-card__body">
-            <h3>Moments of Wonder</h3>
-            <p>See Angkor Wat through breathtaking views, sunrise reflections, ancient corridors,
-               and detailed stone carvings captured in timeless images.
-            </p>
-          </div>
-        </article>
-      </div>
+          <article class="image-card">
+            <img src="images/Khmer Angkor king copy.png" alt="the king of Angkor Wat with the most aura">
+            <div class="image-card__body">
+              <span class="eyebrow">Begin The Journey</span>
+              <h3>Echoes of an Empire</h3>
+              <p>
+                Travel back to the Khmer Empire and uncover the rulers, beliefs, and events that
+                shaped Angkor Wat into one of the world's greatest monuments.
+              </p>
+            </div>
+          </article>
+          <article class="image-card">
+            <img src="images/The Temples of Angkor Wat.png" alt="Cambodia travel scene">
+            <div class="image-card__body">
+              <span class="eyebrow">Begin The Journey</span>
+              <h3>Secrets Written in Stone</h3>
+              <p>
+                From the five sacred towers to hidden galleries and detailed
+                bas-reliefs, every structure reveals a deeper meaning.
+              </p>
+            </div>
+          </article>
+          <article class="image-card">
+            <img src="images/Cambodge.png" alt="UNESCO logo">
+            <div class="image-card__body">
+              <span class="eyebrow">Begin The Journey</span>
+              <h3>Moments of Wonder</h3>
+              <p>
+                See Angkor Wat through breathtaking views, sunrise reflections, ancient corridors,
+                and detailed stone carvings captured in timeless images.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section-space page-shell">
       <div class="section-heading">
-        <p class="eyebrow">BEGIN YOUR EXPLORATION</p>
-        <h2>Everything your project needs to begin</h2>
-        <p>Use these pages as the foundation for a richer Angkor Wat travel and culture website.</p>
+        <p class="eyebrow">DIVE DEEPER INTO ANGKOR WAT</p>
+        <h2>Explore the Timeless World of Angkor Wat</h2>
+        <p>Discover its history, sacred architecture, and everything you need to plan an unforgettable visit.</p>
       </div>
+      <div class="video-showcase" aria-label="Angkor Wat video carousel">
+        <button class="video-arrow video-arrow--prev" type="button" aria-label="Previous video">&lt;</button>
+        <div class="video-carousel">
+          <div class="video-template is-active">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/EQYJ8-o1K0w?si=FkmaOtvyr71sYbJy"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-template">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/C5jpbwizxBs?si=4GPk4PL4OQAvv0pM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-template">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/2UPuVft7swY?si=lmDDO8bfupCQayg0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <button class="video-arrow video-arrow--next" type="button" aria-label="Next video">&gt;</button>
+      </div>
+
       <div class="card-grid">
         <article class="info-card">
-          <span class="icon-mark">H</span>
-          <h3>History timeline</h3>
-          <p>Learn how Angkor Wat was built, changed religion, and became a national symbol.</p>
+          <h3>History Through Time</h3>
+          <p>
+            Angkor Wat was built in the early 12th century by King Suryavarman II as a Hindu temple dedicated to Vishnu.
+            It later became an important Buddhist site and remains a symbol of Cambodia today.
+          </p>
         </article>
-        <article class="info-card">
-          <span class="icon-mark">A</span>
+        <article class="info-card info-card--middle">
           <h3>Temple architecture</h3>
-          <p>Understand the towers, galleries, moat, causeway, and mountain-temple layout.</p>
+          <p>
+            The temple was built mainly from sandstone, with laterite used in hidden structural areas.
+            Its design includes a wide moat, long galleries, carved walls, and five central towers representing Mount Meru.
+          </p>
         </article>
         <article class="info-card">
-          <span class="icon-mark">V</span>
           <h3>Visit planning</h3>
-          <p>Prepare with sunrise advice, respectful dress notes, route ideas, and travel tips.</p>
+          <p>
+            Angkor Wat is best explored early in the morning, when the weather is cooler and visitors can enjoy the famous sunrise view.
+            Wear respectful clothing, bring water, and allow time to walk through its galleries and courtyards.
+          </p>
         </article>
       </div>
     </section>
@@ -184,74 +223,33 @@
     <section id="temple-showcase" class="section-space page-shell">
       <div class="image-showcase">
         <article class="showcase-card">
-          <img src="images/Angkor-painting.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Trending</span>
-            <span>Scenic</span>
-          </div>
+          <img src="images/the king gose to the war.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
           <div class="card-body">
-            <p>12 discoveries</p>
-            <h3>Sunrise at Angkor Wat</h3>
-            <a href="pages/gallery.html">Discover More</a>
-          </div>
-        </article>
-        <article class="showcase-card">
-          <img src="images/Cambodia Poster Design.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Top rated</span>
-          </div>
-          <div class="card-body">
-            <p>8 highlights</p>
-            <h3>Golden Temple View</h3>
+            <h3>Stories Carved in Stone</h3>
+            <a href="pages/gallery.html">Explore the Reliefs</a>
           </div>
         </article>
         <article class="showcase-card">
           <img src="images/ Angkor Wat, Siem Reap_ Cambodia.png" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Heritage</span>
-          </div>
           <div class="card-body">
-            <p>5 stories</p>
-            <h3>Ancient Khmer Details</h3>
-          </div>
-        </article>
-        <article class="showcase-card">
-          <img src="images/angkor-wat-golden-temple.jpg" alt="Bright dawn view of real Angkor Wat with palm trees and reflection">
-          <div class="showcase-card__badges">
-            <span>Exclusive</span>
-            <span>Adventure</span>
-          </div>
-          <div class="card-body">
-            <p>9 routes</p>
-            <h3>Pathways Through the Temple</h3>
-            <a href="pages/visit.html">Plan a Visit</a>
+            <h3>Walk the Sacred Galleries</h3>
           </div>
         </article>
         <article class="showcase-card">
           <img src="images/Angkor Halls and Apsaras copy.png" alt="Stone corridor at Angkor Wat with apsara carvings">
-          <div class="showcase-card__badges">
-            <span>Tropical</span>
-            <span>Featured</span>
-          </div>
           <div class="card-body">
-            <p>17 details</p>
             <h3>Halls and Apsaras</h3>
           </div>
         </article>
         <article class="showcase-card">
-          <img src="images/angkor-wat-greenery.jpg" alt="Angkor Wat temple surrounded by green trees and ancient stone">
-          <div class="showcase-card__badges">
-            <span>Serene</span>
-            <span>Must visit</span>
-          </div>
+          <img src="images/Angkor wat complex temple.png" alt="Angkor Wat temple surrounded by green trees and ancient stone">
           <div class="card-body">
-            <p>11 moments</p>
-            <h3>Green Paths Around Angkor</h3>
-            <a href="pages/visit.html">Discover More</a>
+            <h3>Discover the Temple Complex</h3>
+            <a href="pages/architecture.html">Explore the Complex</a>
           </div>
         </article>
       </div>
-    </section>`
+    </section>
 
     <section class="section-space visit-band">
       <div class="visit-band__inner">

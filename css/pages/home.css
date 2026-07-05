@@ -6,7 +6,6 @@
   padding: 164px var(--space-5) 72px;
   background-image:
     linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
-    radial-gradient(circle at 48% 20%, rgba(255, 213, 77, 0.34), rgba(255, 213, 77, 0) 48%),
     url("../../images/The god temple-Angkor Wat.png");
   background-position: center;
   background-size: cover;
@@ -66,16 +65,27 @@
 
 .intro-info {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   gap: var(--space-6);
 }
 
+.intro-logo {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
 .image-about {
-  width: 550px;
+  width: clamp(320px, 34vw, 460px);
+  height: auto;
 }
 
 .intro-about {
-  width: max(600px);
+  flex: 1 1 520px;
+  width: min(100%, 600px);
 }
 
 #intro-explore {
@@ -86,7 +96,6 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: center;
-  gap: var(--space-7);
   width: min(calc(100% - 40px), 860px);
   margin: 0 auto;
   gap: var(--space-6);
@@ -116,11 +125,6 @@
   font-weight: 900;
 }
 
-.home-hero .form-panel {
-  width: min(calc(100% - 40px), 1060px);
-  margin: var(--space-5) auto 0;
-}
-
 .intro-layout {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -148,6 +152,84 @@
   background-position: center 35%;
   background-repeat: no-repeat;
 }
+
+.video-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  gap: var(--space-6);
+  width: 100%;
+  margin-bottom: var(--space-7);
+}
+
+.video-carousel {
+  width: min(100%, 920px);
+}
+
+.video-template {
+  display: none;
+}
+
+.video-template.is-active {
+  display: block;
+}
+
+.video-template iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.video-arrow {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.08)),
+    rgba(3, 20, 21, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  box-shadow:
+    0 16px 36px rgba(3, 20, 21, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.36);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 1px 8px rgba(3, 20, 21, 0.45);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.video-arrow:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.12)),
+    rgba(18, 184, 134, 0.28);
+  border-color: rgba(255, 255, 255, 0.62);
+  box-shadow:
+    0 18px 42px rgba(18, 184, 134, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.48);
+  transform: translateY(-2px);
+}
+
+.video-arrow:focus-visible {
+  outline: 3px solid rgba(255, 213, 77, 0.85);
+  outline-offset: 4px;
+}
+
+.info-card--middle {
+  transform: translateY(20px);
+}
+
 .experience-box {
   position: absolute;
   right: var(--space-5);
@@ -156,10 +238,10 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
   color: #ffffff;
   background-color: var(--color-primary);
-  border-radius: var(--radius-md);
-  box-shadow: 0 18px 40px rgba(18, 184, 134, 0.3);
+  box-shadow: var(--shadow-strong);
 }
 
 .experience-box strong {
@@ -178,17 +260,13 @@
   margin-bottom: 0;
 }
 
-.image-card--middle {
-  transform: translateY(-30px);
-}
-
 .visit-band {
+  width: 100vw;
   color: #ffffff;
   background:
-    linear-gradient(90deg, rgba(3, 20, 21, 0.72), rgba(14, 78, 66, 0.56)),
-    radial-gradient(circle at 74% 18%, rgba(255, 213, 77, 0.32), rgba(255, 213, 77, 0) 50%),
+    linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
     url("../../images/The god temple-Angkor Wat.png");
-  background-position: center 27%;
+  background-position: center 27.5%;
   background-size: cover;
 }
 
@@ -216,6 +294,10 @@
   scroll-margin-top: 120px;
 }
 
+.page-shell__gallery {
+  padding: 20px 20px;
+}
+
 .image-showcase {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -225,14 +307,15 @@
 .showcase-card {
   position: relative;
   min-height: 300px;
-  border-radius: 18px;
   overflow: hidden;
   box-shadow: var(--shadow-strong);
   isolation: isolate;
 }
 
 .showcase-card:nth-child(1),
-.showcase-card:nth-child(2) {
+.showcase-card:nth-child(2),
+.showcase-card:nth-child(3),
+.showcase-card:nth-child(4) {
   min-height: 430px;
 }
 
@@ -244,12 +327,6 @@
 .showcase-card:nth-child(2),
 .showcase-card:nth-child(3) {
   grid-column: span 2;
-}
-
-.showcase-card:nth-child(5),
-.showcase-card:nth-child(6) {
-  grid-column: span 3;
-  min-height: 340px;
 }
 
 .showcase-card img {
@@ -275,37 +352,6 @@
     linear-gradient(90deg, rgba(3, 18, 19, 0.3), rgba(3, 18, 19, 0));
 }
 
-.showcase-card__badges {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.showcase-card__badges span {
-  min-height: 30px;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 14px;
-  color: #ffffff;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-pill);
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.showcase-card__badges span:nth-child(2) {
-  background-color: rgba(255, 255, 255, 0.24);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(10px);
-}
-
 .card-body {
   position: absolute;
   left: clamp(18px, 3vw, 30px);
@@ -325,25 +371,12 @@
   line-height: 1.1;
 }
 
-.card-body p {
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 13px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.card-body p,
-.card-body a {
-  color: white;
-  font-weight: 700;
-}
-
 .card-body a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  color: white;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -353,10 +386,19 @@
   line-height: 1;
 }
 
-@media (max-width: 860px) {
+.background-section {
+  background-color: var(--color-bacground-add);
+  padding: var(--space-8)
+}
+@media (max-width: 900px) {
   .home-hero {
     min-height: auto;
     padding-top: 88px;
+  }
+
+  .intro-info {
+    justify-content: center;
+    text-align: center;
   }
 
   .home-stats {
@@ -377,22 +419,33 @@
   .showcase-card:nth-child(1),
   .showcase-card:nth-child(2),
   .showcase-card:nth-child(3),
-  .showcase-card:nth-child(4),
-  .showcase-card:nth-child(5),
-  .showcase-card:nth-child(6) {
+  .showcase-card:nth-child(4) {
     grid-column: auto;
   }
 
   .showcase-card,
   .showcase-card:nth-child(1),
-  .showcase-card:nth-child(2),
-  .showcase-card:nth-child(5),
-  .showcase-card:nth-child(6) {
+  .showcase-card:nth-child(2) {
     min-height: 360px;
+  }
+
+  .image-card--middle,
+  .info-card--middle {
+    transform: none;
+  }
+
+  .unesco-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .unesco-banner__logo {
+    width: min(100%, 260px);
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .home-hero {
     padding: 76px var(--space-4) 96px;
   }
@@ -406,9 +459,40 @@
     text-align: center;
   }
 
+  .home-stats div {
+    justify-content: center;
+  }
+
   .experience-box {
     position: static;
     width: 100%;
     margin-top: var(--space-3);
+  }
+
+  .video-showcase {
+    gap: var(--space-2);
+  }
+
+  .video-carousel {
+    width: calc(100% - 112px);
+  }
+
+  .video-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+
+  .unesco-banner {
+    width: 100%;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    margin-left: 0;
+    padding: var(--space-5);
+    transform: none;
+  }
+
+  .unesco-banner__text p {
+    font-size: 16px;
   }
 }
