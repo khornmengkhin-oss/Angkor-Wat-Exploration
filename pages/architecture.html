@@ -8,23 +8,27 @@
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages/architecture.css">
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/architecture.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&family=Source+Serif+4:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-logo" href="index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
+      <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
 
-      <nav class="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <a href="history.html">History</a>
         <a href="architecture.html" aria-current="page">Architecture</a>
@@ -58,7 +62,7 @@
           Overall, the temple's layout, dimensions, and alignments have led to many deeper symbolic interpretations.</p>
         </div>
         <div class="hero-img">
-          <img src="/images/AngkorwatAboveshot.jpg" alt="Overview of Angkor Wat temple in Cambodia">
+          <img src="../images/AngkorwatAboveshot.jpg" alt="Overview of Angkor Wat temple in Cambodia">
           
         </div>
       </div>
@@ -68,9 +72,9 @@
       <div class="grid">
         <div class="main-card card-left">
           <div class="model-container">
-            <h3>Site Plane</h3>
+            <h3>Site Plan</h3>
             <p>A 3D model of Angkor Wat's land site</p>
-            <model-viewer alt="angkorModel" src="/images/angkor_wat_temple_cambodia.glb"
+            <model-viewer alt="angkorModel" src="../images/angkor_wat_temple_cambodia.glb"
             autoplay
             camera-controls
             touch-action="pan-y"
@@ -94,7 +98,7 @@
         </div>
 
         <div class="pic1">
-          <img src="/images/outerEnclosure.jpg" alt="OuterEnclosure-Angkor-Wat-Cambodia">
+          <img src="../images/outerEnclosure.jpg" alt="OuterEnclosure-Angkor-Wat-Cambodia">
         </div>
 
         <div class="card card3">
@@ -130,28 +134,29 @@
         <article id="causeway" class="info-card-architecture">
           <span class="icon-mark">C</span>
           <div class="card-grid_image">
-            <img class="card-grid_image" src="/images/AngkorWatCauseway.jpg" alt="Causeway of Angkor Wat temple in Cambodia">
+            <img class="card-grid_image" src="../images/AngkorWatCauseway.jpg" alt="Causeway of Angkor Wat temple in Cambodia">
           </div>
           <h3>Causeway</h3>
-          <p>192 meters long and 11.6 meters wide, made out of sandstone blocks, it onnects the temple approach to the main enclosure and helps guide movement along the central axis. It leads visitors from the western entrance across the water to the main temple complex</p>
+          <p>192 meters long and 11.6 meters wide, made out of sandstone blocks, it connects the temple approach to the main enclosure and helps guide movement along the central axis. It leads visitors from the western entrance across the water to the main temple complex.</p>
         </article>
         <article id="galleries" class="info-card-architecture">
           <span class="icon-mark">G</span>
-          <img class="card-grid_image" src="/images/AngkorWatGalleries.jpg" alt="Galleries of Angkor Wat temple in Cambodia">
+          <img class="card-grid_image" src="../images/AngkorWatGalleries.jpg" alt="Galleries of Angkor Wat temple in Cambodia">
           <h3>Galleries</h3>
           <p>Combine the tiered pyramidal structure of a temple-mountain with South Indian-inspired concentric corridors. Three raised, rectangular galleries wrap around the central quincunx of towers, acting as structural borders for the stepped terraces and serving as a physical manifestation of Mount Meru.</p>
         </article>
         <article id="courtyards" class="info-card-architecture">
           <span class="icon-mark">P</span>
-          <img class="card-grid_image" src="/images/AngkorwatCourtyard.jpeg" alt="Courtyards and Platforms of Angkor Wat temple in Cambodia">
+          <img class="card-grid_image" src="../images/AngkorwatCourtyard.jpeg" alt="Courtyards and Platforms of Angkor Wat temple in Cambodia">
           <h3>Courtyards and Platforms</h3>
           <p>nested, concentric square enclosures that progressively elevate toward a central quincunx of towers. Featuring cruciform layouts, colonnaded galleries, and traditional libraries, these spaces were intricately designed to mirror Hindu cosmology.</p>
         </article>
         <article id="towers" class="info-card-architecture">
           <span class="icon-mark">T</span>
-          <img class="card-grid_image" src="/images/20191210-angkor-wat-tower-stairs-2-b2d6ff-1024.jpg" alt="Towers and Stairways of Angkor Wat temple in Cambodia">
+          <img class="card-grid_image" src="../images/20191210-angkor-wat-tower-stairs-2-b2d6ff-1024.jpg" alt="Towers and Stairways of Angkor Wat temple in Cambodia">
           <h3>Towers and Stairways</h3>
           <p>The five central, lotus-bud towers rise to 65 meters, arranged in a quincunx. The famously steep staircases, inclined up to 70 degrees, were designed to be spiritually challenging, forcing a physical posture of submission.</p>
+        </article>
       </div>
     </section>
     
@@ -167,17 +172,17 @@
       <div>
         <h3>Explore</h3>
         <ul>
-          <li><a href="pages/history.html">History</a></li>
-          <li><a href="pages/architecture.html">Architecture</a></li>
-          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
       <div>
         <h3>Visit</h3>
         <ul>
-          <li><a href="pages/visit.html">Planning tips</a></li>
-          <li><a href="pages/visit.html">Opening notes</a></li>
-          <li><a href="pages/visit.html">Respectful travel</a></li>
+          <li><a href="visit.html">Planning tips</a></li>
+          <li><a href="visit.html">Opening notes</a></li>
+          <li><a href="visit.html">Respectful travel</a></li>
         </ul>
       </div>
       <div>
