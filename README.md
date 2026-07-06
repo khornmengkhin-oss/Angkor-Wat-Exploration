@@ -50,11 +50,11 @@ This project uses beginner HTML and CSS ideas from class, including headings, pa
 
 ## Team Task Division
 
-Each member is responsible for one page, one page-specific CSS file, and one optional JavaScript file. The JavaScript files are empty for now, so each member can add small extra features later if needed.
+Each member is responsible for one page, one page-specific CSS file, and one optional JavaScript file. The shared navigation script is used on every page.
 
 | Team Member | Page Responsibility | Main Files |
 | --- | --- | --- |
-| Khorn Mengkhin | Home page and shared website structure | `index.html`, `css/pages/home.css`, `js/home.js`, `css/global.css`, `css/layout.css`, `css/components.css` |
+| Khorn Mengkhin | Home page and shared website structure | `index.html`, `css/pages/home.css`, `js/home.js`, `js/navigation.js`, `css/global.css`, `css/layout.css`, `css/components.css` |
 | Ratha Raksmey | History page | `pages/history.html`, `css/pages/history.css`, `js/history.js` |
 | Lo Sovannara | Architecture page | `pages/architecture.html`, `css/pages/architecture.css`, `js/architecture.js` |
 | Heng Munireach | Gallery page | `pages/gallery.html`, `css/pages/gallery.css`, `js/gallery.js` |
@@ -250,6 +250,7 @@ angkor-wat-digital-guide/
 |   |-- gallery.js
 |   |-- history.js
 |   |-- home.js
+|   |-- navigation.js
 |   `-- visit.js
 |-- pages/
 |   |-- architecture.html

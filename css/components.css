@@ -31,22 +31,14 @@
   outline-offset: 3px;
 }
 
-.button[aria-current="page"] {
-  color: #ffffff;
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-}
-
-.button--ghost,
-.second-button {
+.button--ghost {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.55);
   box-shadow: none;
 }
 
-.button--ghost:hover,
-.second-button:hover {
+.button--ghost:hover {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.16);
   border-color: #ffffff;
@@ -79,7 +71,6 @@
   font-size: 18px;
 }
 
-.hero-panel,
 .page-hero {
   position: relative;
   isolation: isolate;
@@ -227,17 +218,12 @@
 
 .background-section {
   background-color: var(--color-bacground-add);
-  padding: var(--space-8)
+  padding: var(--space-8);
 }
 
 @media (max-width: 900px) {
-  .card-grid,
-  .stats-band {
+  .card-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stat-item + .stat-item {
-    border-left: 0;
   }
 
   .form-panel {
@@ -257,7 +243,6 @@
   }
 
   .card-grid,
-  .stats-band,
   .form-panel {
     grid-template-columns: 1fr;
   }
