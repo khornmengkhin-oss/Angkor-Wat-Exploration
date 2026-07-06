@@ -22,9 +22,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">
-        <img class="site-logo__name" src="../images/logo-clean.svg" alt="Angkor Wat Digital Guide logo">
-      </a>
+      <a class="site-logo" href="index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
 
       <nav class="site-nav" aria-label="Main navigation">
         <a href="../index.html">Home</a>
@@ -49,38 +47,124 @@
       </div>
     </section>
 
+    <hr class="divider">
+
+    <section class="overview">
+      <div class="hero">
+        <div class="hero-text">
+          <h2>Architectural Overview</h2>
+          <p><strong>Angkor Wat</strong> combines the temple-mountain design with concentric <em>galleries</em>. Its layout and orientation may have celestial meaning, including alignments with the sunrise at solstices. Many interpret the temple as a symbol of Mount Meru, with the central towers representing the mountain's peaks and the surrounding walls and moat representing mountains and ocean.
+
+          It is unusual because it faces west, not east. Some scholars think this means it was intended as a funerary temple for Suryavarman, supported by the counter-clockwise bas-reliefs associated with funeral rites. Others argue the westward orientation reflects its dedication to Vishnu, who is linked with the west.
+
+          Overall, the temple's layout, dimensions, and alignments have led to many deeper symbolic interpretations.</p>
+        </div>
+        <div class="hero-img">
+          <img src="/images/AngkorwatAboveshot.jpg" alt="Overview of Angkor Wat temple in Cambodia">
+          
+        </div>
+      </div>
+      
+        
+      
+      <div class="grid">
+        <div class="main-card card-left">
+          <div class="model-container">
+            <h3>Site Plane</h3>
+            <p>A 3D model of Angkor Wat's land site</p>
+            <model-viewer alt="angkorModel" src="/images/angkor_wat_temple_cambodia.glb"
+            autoplay
+            camera-controls
+            touch-action="pan-y"
+            >
+            </model-viewer>
+          </div>
+        </div>
+
+        <div class="card card1">
+          <h3>Moat and Boundary</h3>
+          <p>The outer water enclosure frames the complex and separates the temple from the surrounding landscape.</p>
+        </div>
+
+         <div class="pic">
+          <img src="../images/overview-complex-Angkor-Wat-Cambodia.webp" alt="Moat and Boundary of Angkor Wat temple in Cambodia">
+        </div>
+
+        <div class="card card2">
+          <h3>Outer Enclosure</h3>
+          <p>The first major built perimeter establishes scale and begins the progression inward.</p>
+        </div>
+
+        <div class="pic1">
+          <img src="/images/outerEnclosure.jpg" alt="OuterEnclosure-Angkor-Wat-Cambodia">
+        </div>
+
+        <div class="card card3">
+          <h3>Inner Galleries</h3>
+          <p>Long gallery spaces create circulation, rhythm, and layered movement through the temple.</p>
+        </div>
+        
+        <div class="pic2">
+          <img src="../images/innerGallery.jpg" alt="Inner Galleries of Angkor Wat temple in Cambodia">
+        </div>
+
+        <div class="pic3">
+          <img src="../images/centralTowersAngkkor.jpg" alt="Central Towers of Angkor Wat temple in Cambodia">
+        </div>
+        <div class="card card4">
+          <h3>Central Towers</h3>
+          <p>Five towers rise above the temple, creating the famous lotus-bud silhouette.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider">
+    
     <section class="section-space page-shell">
       <div class="section-heading">
-        <p class="eyebrow">Temple design</p>
-        <h2>A stone model of Mount Meru</h2>
-        <p>The temple's moat, galleries, and central towers were designed to represent a sacred cosmic landscape.</p>
+        <p class="eyebrows" style="color:rgb(18, 184, 134);">Main Architectural Elements</p>
+        <h2>What makes Angkor Wat unique?</h2>
+        <p>The temple's main elements include the <em>causeway</em>, <em>galleries</em>, <em>courtyards and platforms</em>, and <em>towers and stairways</em> </p>
       </div>
 
       <div class="card-grid">
-        <article class="info-card">
-          <span class="icon-mark">T</span>
-          <h3>Central towers</h3>
-          <p>Five towers rise above the temple, creating the famous lotus-bud silhouette.</p>
+        <article id="causeway" class="info-card-architecture">
+          <span class="icon-mark">C</span>
+          <div class="card-grid_image">
+            <img class="card-grid_image" src="/images/AngkorWatCauseway.jpg" alt="Causeway of Angkor Wat temple in Cambodia">
+          </div>
+          <h3>Causeway</h3>
+          <p>192 meters long and 11.6 meters wide, made out of sandstone blocks, it onnects the temple approach to the main enclosure and helps guide movement along the central axis. It leads visitors from the western entrance across the water to the main temple complex</p>
         </article>
-        <article class="info-card">
+        <article id="galleries" class="info-card-architecture">
           <span class="icon-mark">G</span>
-          <h3>Long galleries</h3>
-          <p>Covered walkways hold detailed bas-reliefs that tell religious and historical stories.</p>
+          <img class="card-grid_image" src="/images/AngkorWatGalleries.jpg" alt="Galleries of Angkor Wat temple in Cambodia">
+          <h3>Galleries</h3>
+          <p>Combine the tiered pyramidal structure of a temple-mountain with South Indian-inspired concentric corridors. Three raised, rectangular galleries wrap around the central quincunx of towers, acting as structural borders for the stepped terraces and serving as a physical manifestation of Mount Meru.</p>
         </article>
-        <article class="info-card">
-          <span class="icon-mark">M</span>
-          <h3>Moat and causeway</h3>
-          <p>The wide moat and processional causeway create a dramatic approach to the temple.</p>
+        <article id="courtyards" class="info-card-architecture">
+          <span class="icon-mark">P</span>
+          <img class="card-grid_image" src="/images/AngkorwatCourtyard.jpeg" alt="Courtyards and Platforms of Angkor Wat temple in Cambodia">
+          <h3>Courtyards and Platforms</h3>
+          <p>nested, concentric square enclosures that progressively elevate toward a central quincunx of towers. Featuring cruciform layouts, colonnaded galleries, and traditional libraries, these spaces were intricately designed to mirror Hindu cosmology.</p>
         </article>
+        <article id="towers" class="info-card-architecture">
+          <span class="icon-mark">T</span>
+          <img class="card-grid_image" src="/images/20191210-angkor-wat-tower-stairs-2-b2d6ff-1024.jpg" alt="Towers and Stairways of Angkor Wat temple in Cambodia">
+          <h3>Towers and Stairways</h3>
+          <p>The five central, lotus-bud towers rise to 65 meters, arranged in a quincunx. The famously steep staircases, inclined up to 70 degrees, were designed to be spiritually challenging, forcing a physical posture of submission.</p>
       </div>
     </section>
+    
   </main>
 
     <footer class="site-footer">
     <div class="site-footer__inner">
       <div>
-        <h2>Angkor Wat Guide</h2>
-        <p>A student-friendly digital guide for Cambodia's most treasured temple complex.</p>
+        <h2>AngkoRism</h2>
+        <p>Explore its sacred architecture, royal history, intricate carvings, and the stories that continue to shape Cambodia’s cultural heritage.
+        </p>
       </div>
       <div>
         <h3>Explore</h3>
@@ -99,14 +183,16 @@
         </ul>
       </div>
       <div>
-        <h3>Project</h3>
-        <p>Built with HTML and CSS using shared root elements and reusable components.</p>
+        <h3>About AngkoRism</h3>
+        <p>Created to share Cambodia’s remarkable cultural heritage through stories, 
+          visuals, and practical guidance for every visitor.
+        </p>
       </div>
     </div>
     <div class="site-footer__bottom">
       <p>&copy; 2026 Angkor Wat Digital Guide. Educational project website.</p>
     </div>
   </footer>
-
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
 </body>
 </html>

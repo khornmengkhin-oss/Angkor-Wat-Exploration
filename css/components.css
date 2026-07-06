@@ -55,8 +55,9 @@
 .eyebrow {
   margin-bottom: var(--space-3);
   color: var(--color-primary);
+  font-family: var(--font-eyebrow);
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -222,6 +223,11 @@
 
 .form-field input::placeholder {
   color: rgba(255, 255, 255, 0.58);
+}
+
+.background-section {
+  background-color: var(--color-bacground-add);
+  padding: var(--space-8)
 }
 
 @media (max-width: 900px) {
