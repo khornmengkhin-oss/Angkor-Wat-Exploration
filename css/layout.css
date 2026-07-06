@@ -46,6 +46,41 @@
   gap: var(--space-2);
 }
 
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: var(--radius-pill);
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .site-nav a {
   padding: 7px 15px;
   font-family: var(--font-heading);
@@ -130,33 +165,46 @@
 
 @media (max-width: 900px) {
   .site-header {
-    position: static;
+    position: fixed;
     padding: var(--space-3);
     background-color: var(--color-footer);
   }
 
   .site-header__inner {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0 var(--space-3);
     padding: var(--space-4);
     border-radius: var(--radius-lg);
   }
 
-  img.site-logo__name {
-    width: min(260px, 70vw);
-    height: 66px;
-    padding: 0;
+  .nav-toggle {
+    display: inline-flex;
   }
 
   .site-nav {
+    display: none;
+    grid-column: 1 / -1;
     width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
     margin-top: var(--space-4);
   }
 
+  .site-nav.is-open {
+    display: flex;
+  }
+
   .site-nav a {
-    padding: 9px 11px;
-    font-size: 14px;
+    flex: initial;
+    min-width: 0;
+    padding: 12px 14px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-sm);
+    font-size: 18px;
+    text-align: center;
   }
 
   .site-footer__inner {
@@ -171,22 +219,6 @@
 
   .site-header__inner {
     border-radius: 0;
-  }
-
-  .site-logo__name {
-    font-size: 36px;
-  }
-
-  img.site-logo__name {
-    width: min(220px, 76vw);
-    height: 58px;
-    padding: 0;
-  }
-
-  .site-nav a {
-    flex: 1 0 108px;
-    min-width: 0;
-    text-align: center;
   }
 
   .page-shell,
