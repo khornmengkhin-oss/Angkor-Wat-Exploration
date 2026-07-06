@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <title>Gallery | Angkor Wat Digital Guide</title>
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages/gallery.css">
-  <script src="../js/navigation.js" defer></script>
-  <script src="../js/gallery.js" defer></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&family=Source+Serif+4:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header"> 
     <div class="site-header__inner">
-      <a class="site-logo" href="index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
+      <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">
+        <span class="site-logo__name">Angkor Wat</span>
+      </a>
 
       <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -42,7 +38,7 @@
     <section class="page-hero">
       <div>
         <h1>Gallery</h1>
-        <p>Collect visual moments from Angkor Wat, from wide temple views to cultural details.</p>
+        <p>Visual moments of Angkor Wat from wide temple views to cultural details.</p>
         <div class="breadcrumbs" aria-label="Breadcrumb">
           <a href="../index.html">Home</a>
           <span>/</span>
@@ -53,43 +49,114 @@
 
     <section class="section-space page-shell">
       <div class="section-heading">
-        <p class="eyebrow">Photo guide</p>
-        <h2>Scenes for your Angkor story</h2>
-        <p>Use this page to build a richer visual archive with temple photos, captions, and visitor highlights.</p>
+        <p class="eyebrow">Photo Album</p>
+        <h2>Angkor Wat, The City of Wonder</h2>
+        <p>The largest religious monument in the world, Angkor Wat is a UNESCO World Heritage site and a symbol of Cambodia.</p>
       </div>
+      <div class="gallery-container">
+      <div class="gallery-photos">
+        <div class="gallery-column">
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/cambodia.jpg">
+          </div>
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/sculpture/Siem Reap, Cambodia - Your Ultimate Guide to Angkor Wat.jpg" alt="A sunlit passageway at Angkor Wat">
+          </div>
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/Уникальная природа — ирравади дельфины _ Unique Wildlife_ Irrawaddy Dolphins.jpg" alt="A sunlit passageway at Angkor Wat">
+          </div>
+        </div>
 
-      <div class="card-grid">
-        <article class="image-card">
-          <img src="../images/angkor-wat-greenery.jpg" alt="Angkor Wat reflected in water">
-          <div class="image-card__body">
-            <h3>Temple reflection</h3>
-            <p>A classic view of Angkor Wat framed by water and palm trees.</p>
+        <div class="gallery-column">
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/Khmer Temple - Cambodia.jpg">
           </div>
-        </article>
-        <article class="image-card">
-          <img src="../images/Cambodge.png" alt="Cambodia travel scene">
-          <div class="image-card__body">
-            <h3>Cambodia journey</h3>
-            <p>Gallery space for travel scenes connected to the Angkor experience.</p>
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/ankor wat sunrice.jpg">
           </div>
-        </article>
-        <article class="image-card">
-          <img src="../images/unesco-seeklogo.png" alt="UNESCO logo">
-          <div class="image-card__body">
-            <h3>World heritage</h3>
-            <p>Angkor Wat is part of the Angkor UNESCO World Heritage Site.</p>
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/Angkor Wat, Siem Reap, Cambodia.jpg">
           </div>
-        </article>
+        </div>
+
+        <div class="gallery-column">
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/flying through my bucket list destinations📍.jpg">
+          </div>
+          <div class="gallery-photos">
+            <img src="../images/Gallery_page/Angkor Wat Sunrise.jpg">
+          </div>
+        </div>
       </div>
+      </div>
+   
+      <div class="container-gallery swiper" style="background-image: url(../images/Gallery_page/images\ \(7\).jpg)">
+        <ul class="card-list-gallery swiper-wrapper"> 
+          <li class="card-item-gallery swiper-slide">
+            <a href="#" class="card-link-gallery">
+              <img src="../images/Gallery_page/sunrise/equinox.jpg" class="card-image">
+              <p class="badge-gallery">Equinox Angkor</p>
+              <h4 class="card-tittle-gallery">The Angkor Wat sunrise phenomenon</h4>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+             </a>
+          </li>
+          <li class="card-item-gallery swiper-slide">
+            <a href="#" class="card-link-gallery">
+              <img src="../images/Gallery_page/surrounding/reflection.png" class="card-image">
+              <p class="badge-gallery">Where Stone Meets the Sky</p>
+              <h4 class="card-tittle-gallery">A mirror of calm waters reflects the enduring majesty of Angkor Wat</h4>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>              </a>
+          </li>
+
+          <li class="card-item-gallery swiper-slide">
+            <a href="#" class="card-link-gallery">
+              <img src="../images/Gallery_page/surrounding/The-magnificent-view-of-Angkor-Wat-Temple-is-enhanced-by-the-presence-of-stunning-palm-trees-in-its-surroundings.jpg" class="card-image">
+              <p class="badge-gallery">Guardians of Stone</p>
+              <h4 class="card-tittle-gallery">Palm trees guarding the timeless beauty of Angkor Wat</h4>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+
+          <li class="card-item-gallery swiper-slide">
+            <a href="#" class="card-link-gallery">
+              <img src="../images/Gallery_page/sculpture/ChatGPT Image Jul 6, 2026, 01_20_08 AM.png" class="card-image">
+              <p class="badge-gallery">Timeless Dancers</p>
+              <h4 class="card-tittle-gallery">Elegant carvings capture the eternal beauty of Angkor's history</h4>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+
+          <li class="card-item-gallery swiper-slide">
+            <a href="#" class="card-link-gallery">
+              <img src="../images/Gallery_page/flying through my bucket list destinations📍.jpg" class="card-image">
+              <p class="badge-gallery">Guardians of Stone</p>
+              <h4 class="card-tittle-gallery">Palm trees guarding the timeless beauty of Angkor Wat</h4>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>              </a>
+          </li>
+
+          <li class="card-item-gallery swiper-slide">
+            <a href="#" class="card-link-gallery">
+              <img src="../images/unesco-seeklogo.png" class="card-image">
+              <p class="badge-gallery">World Heritage</p>
+              <h4 class="card-tittle-gallery">Angkor Wat is part of the Angkor UNESCO World Heritage Site</h4>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>              </a>
+          </li>
+        </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script src="../js/gallery.js"></script>
     </section>
-  </main>
 
+  </main>
     <footer class="site-footer">
     <div class="site-footer__inner">
       <div>
-        <h2>AngkoRism</h2>
-        <p>Explore its sacred architecture, royal history, intricate carvings, and the stories that continue to shape Cambodia’s cultural heritage.
-        </p>
+        <h2>Angkor Wat Guide</h2>
+        <p>A student-friendly digital guide for Cambodia's most treasured temple complex.</p>
       </div>
       <div>
         <h3>Explore</h3>
@@ -108,16 +175,13 @@
         </ul>
       </div>
       <div>
-        <h3>About AngkoRism</h3>
-        <p>Created to share Cambodia’s remarkable cultural heritage through stories, 
-          visuals, and practical guidance for every visitor.
-        </p>
+        <h3>Project</h3>
+        <p>Built with HTML and CSS using shared root elements and reusable components.</p>
       </div>
     </div>
     <div class="site-footer__bottom">
       <p>&copy; 2026 Angkor Wat Digital Guide. Educational project website.</p>
     </div>
   </footer>
-
 </body>
 </html>
