@@ -6,51 +6,45 @@ if (videoShowcase) {
   const nextButton = videoShowcase.querySelector(".video-arrow--next");
   let activeVideo = 0;
 
-  const createPoster = (video) => {
-    const videoId = video.dataset.videoId;
-    const videoTitle = video.dataset.videoTitle;
-    const videoChannel = video.dataset.videoChannel;
+  const stopVideo = (video) => {
+    const iframe = video.querySelector("iframe");
 
-    video.innerHTML = `
-      <button class="video-poster" type="button" aria-label="Play ${videoTitle}">
-        <img
-          src="https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg"
-          alt="${videoTitle}"
-          loading="lazy"
-          onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/${videoId}/hq720.jpg';">
-        <span class="video-poster__shade"></span>
-        <span class="video-poster__meta">
-          <strong>${videoTitle}</strong>
-          <small>${videoChannel}</small>
-        </span>
-        <span class="video-poster__play" aria-hidden="true"></span>
-      </button>
-    `;
+    video.classList.remove("is-playing");
 
-    video.querySelector(".video-poster").addEventListener("click", () => {
-      video.innerHTML = `
-        <iframe
-          src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
-          title="${videoTitle}"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
-      `;
-    });
+    if (iframe) {
+      iframe.removeAttribute("src");
+    }
   };
 
-  videos.forEach(createPoster);
+  const playVideo = (video) => {
+    const iframe = video.querySelector("iframe");
+    const videoUrl = iframe?.dataset.src;
+
+    if (iframe && videoUrl) {
+      iframe.src = `${videoUrl}&autoplay=1`;
+      video.classList.add("is-playing");
+    }
+  };
 
   const showVideo = (nextVideo) => {
-    createPoster(videos[activeVideo]);
-
+    stopVideo(videos[activeVideo]);
     videos[activeVideo].classList.remove("is-active");
+
     activeVideo = (nextVideo + videos.length) % videos.length;
     videos[activeVideo].classList.add("is-active");
   };
 
   if (videos.length > 0 && previousButton && nextButton) {
+    videos.forEach((video) => {
+      const cover = video.querySelector(".video-cover");
+
+      if (cover) {
+        cover.addEventListener("click", () => {
+          playVideo(video);
+        });
+      }
+    });
+
     previousButton.addEventListener("click", () => {
       showVideo(activeVideo - 1);
     });

@@ -224,6 +224,11 @@
   color: rgba(255, 255, 255, 0.58);
 }
 
+.background-section {
+  background-color: var(--color-bacground-add);
+  padding: var(--space-8)
+}
+
 @media (max-width: 900px) {
   .card-grid,
   .stats-band {
