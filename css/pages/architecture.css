@@ -3,3 +3,187 @@
 main p {
   color: #555555;
 }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    min-height: 100vh;
+    padding: 4rem 6rem;
+  }
+  
+    .hero-img img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      border-radius: 24px;
+      display: block;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+      
+    }
+
+  /*Basic Elements*/
+  .card h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(18, 184, 134);
+  }
+  strong {
+    color:rgb(18, 184, 134);
+  }
+  .divider {
+    border: 1px solid black;
+    margin: 55px 20px;
+    margin-bottom: 30px;
+  }
+
+  .eyebrows {
+    color: rgb(18, 184, 134);
+    margin-bottom: var(--space-3);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .card-grid_image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .info-card-architecture {
+    min-height: 220px;
+    padding: var(--space-6);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      border: 2px solid rgb(18, 184, 134);
+    }
+  }
+
+  /*3d model*/
+  .model-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 583px;
+    flex-direction: column;
+
+  }
+   model-viewer{
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+  }
+
+  /*Cards in Grid*/
+  .main-card {
+     border: 2px solid rgb(223, 231, 226);
+     border-radius: 14px;
+     &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      border: 2px solid rgb(18, 184, 134);
+     }
+     
+  }
+  .card-grid {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+  .card-grid > *:nth-child(4) {
+  grid-column: 2;
+}
+  
+  .card {
+    padding: 10px;
+     border: 1px solid  rgb(223, 231, 226);
+     border-radius: 14px;
+     &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      border: 2px solid rgb(18, 184, 134);
+     }
+  }
+
+  /*pics Adjustment in cards*/
+  .pic, .pic1, .pic2, .pic3 {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 16px;
+  }
+  .pic img, .pic1 img, .pic2 img, .pic3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+ 
+  /*Overview*/
+  .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+    margin: 0 10px;
+  }
+  }
+
+  /*The Grid*/
+  .grid {
+    display: grid;
+    grid-template-areas: 
+      "card-left card1 card2"
+      "card-left pic pic1"
+      "card-left card3 card4"
+      "card-left pic2 pic3";
+
+    .card-left {
+      grid-area: card-left;
+    }
+    .card1 {
+      grid-area: card1;
+    }
+    .card2 {
+      grid-area: card2;
+    }
+    .card3 {
+      grid-area: card3;
+    }
+    .card4 {
+      grid-area: card4;
+    }
+    pic {
+      grid-area: pic;
+    }
+    .pic1 {
+      grid-area: pic1;
+    }
+    .pic2 {
+      grid-area: pic2;
+    }
+    .pic3 {
+      grid-area: pic3;
+    }
+    
+    gap: 20px;
+    margin: 20px;
+  }
+
+
+ 
