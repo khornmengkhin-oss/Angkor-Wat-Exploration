@@ -1,43 +1,4 @@
 /* this file is only for history page */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-}
-
-body {
-  color: #1a1a1a;
-  line-height: 1.7;
-  background: #ffffff;
-  margin: 0;
-  color: var(--color-text);
-  background-color: var(--color-soft);
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.7;
-  text-rendering: optimizeLegibility;
-}
-
-h2 {
-  color: #000;
-  font-weight: 700px;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto; 
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.hero-title {
-  color: #ffffff;
-  text-align: center;
-}
 
 .section-title {
   text-align: center;
@@ -71,7 +32,8 @@ a {
 }
 
 .timeline-text h2 {
-  font-weight: 700px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .timeline-text h3 {
@@ -79,6 +41,7 @@ a {
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 14px;
+  text-align: center;
 }
 
 .timeline-text p {
