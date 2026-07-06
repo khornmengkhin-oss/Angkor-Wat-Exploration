@@ -35,7 +35,7 @@ main p {
   .divider {
     border: 1px solid black;
     margin: 55px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
   }
 
   .eyebrows {
@@ -148,10 +148,10 @@ main p {
   .grid {
     display: grid;
     grid-template-areas: 
-      "card-left card1 card2"
-      "card-left pic pic1"
-      "card-left card3 card4"
-      "card-left pic2 pic3";
+      "card1 card-left card2"
+      "pic card-left pic1"
+      "card3 card-left card4"
+      "pic2 card-left pic3";
 
     .card-left {
       grid-area: card-left;
