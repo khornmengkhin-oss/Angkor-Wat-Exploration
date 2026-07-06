@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages/architecture.css">
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/architecture.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&family=Source+Serif+4:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
@@ -24,7 +22,13 @@
     <div class="site-header__inner">
       <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
 
-      <nav class="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <a href="history.html">History</a>
         <a href="architecture.html" aria-current="page">Architecture</a>
