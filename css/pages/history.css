@@ -1,43 +1,4 @@
 /* this file is only for history page */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-}
-
-body {
-  color: #1a1a1a;
-  line-height: 1.7;
-  background: #ffffff;
-  margin: 0;
-  color: var(--color-text);
-  background-color: var(--color-soft);
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.7;
-  text-rendering: optimizeLegibility;
-}
-
-h2 {
-  color: #000;
-  font-weight: 700px;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto; 
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.hero-title {
-  color: #ffffff;
-  text-align: center;
-}
 
 .section-title {
   text-align: center;
@@ -71,7 +32,8 @@ a {
 }
 
 .timeline-text h2 {
-  font-weight: 700px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .timeline-text h3 {
@@ -79,6 +41,7 @@ a {
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 14px;
+  text-align: center;
 }
 
 .timeline-text p {
@@ -130,40 +93,70 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+  .section-title,
+  .timeline {
+    width: min(calc(100% - 40px), 900px);
+  }
+
   .section-title {
     font-size: 26px;
-    margin: 40px 0 30px;
+    margin: 40px auto 30px;
     text-align: center;
+  }
+
+  .section-title h2,
+  .timeline-text h2 {
+    font-size: 34px;
+  }
+
+  .timeline {
+    padding: 0;
   }
 
   .timeline-block,
   .timeline--reverse .timeline-block {
     flex-direction: column;
-    gap: 24px;
-    margin-bottom: 56px;
+    gap: 18px;
+    margin-bottom: 48px;
     align-items: center;
   }
 
   .showcase-card,
   .timeline-image {
     width: 100%;
-    max-width: 800px;
+    max-width: 680px;
   }
 
   .showcase-card img,
   .timeline-image img {
     width: 100%;
-    max-height: 640px;
+    height: clamp(260px, 42vw, 340px);
     object-fit: cover;
   }
 
   .timeline-text {
     width: 100%;
-    max-width: 640px;
+    max-width: 680px;
+    text-align: center;
+  }
+
+  .timeline-text .eyebrow {
+    display: block;
+    text-align: center;
   }
 
   .timeline-text h3 {
     font-size: 18px;
+    margin-top: 0;
+  }
+
+  .timeline-text p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .background-section {
+    padding: var(--space-6) 0;
   }
 
   .image-about {
@@ -173,28 +166,39 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .section-title,
   .timeline {
-    padding: 0 14px;
+    width: min(calc(100% - 28px), 100%);
+  }
+
+  .timeline {
+    padding: 0;
   }
 
   .section-title {
     font-size: 20px;
-    margin: 30px 0 20px;
+    margin: 28px auto 22px;
   }
 
   .section-title h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .timeline-block,
   .timeline--reverse .timeline-block {
     gap: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    align-items: stretch;
+  }
+
+  .showcase-card,
+  .timeline-image {
+    max-width: 100%;
   }
 
   .showcase-card img,
   .timeline-image img {
-    max-height: 240px;
+    height: 220px;
   }
 
   .timeline-text h3 {
