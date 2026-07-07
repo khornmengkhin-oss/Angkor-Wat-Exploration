@@ -168,13 +168,28 @@ main p {
     font-size: 12px;
     font-weight: bold;
 }
-@media (max-width: 980px) {
+
+@media (max-width: 900px) {
+  .visit-route-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+  .visit-route-section .form-panel {
+        width: 100%;
+    }
+
   .visit-contact-layout {
         grid-template-columns: 1fr;
+        gap: 28px;
     }
 
     .visit-map-card img {
         height: 320px;
+    }
+
+    .contact-box {
+        padding: 40px 36px;
     }
 }
 
@@ -192,6 +207,7 @@ main p {
 
     .contact-box {
         padding: 30px 20px;
+        border-radius: 12px;
     }
 
     .visit-contact-section {
@@ -199,8 +215,25 @@ main p {
         padding-bottom: 64px;
     }
 
+    .visit-map-card {
+        border-radius: 12px;
+    }
+
+    .visit-map-card img {
+        height: 240px;
+    }
+
     .visit-map-card__body {
         padding: 20px;
+    }
+
+    .form-title {
+        font-size: 28px;
+    }
+
+    .dispatch-btn {
+        width: 100%;
+        justify-content: center;
     }
   }
     
