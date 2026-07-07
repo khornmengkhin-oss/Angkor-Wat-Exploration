@@ -33,15 +33,16 @@ main {
 }
 
 .gallery-photos {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
   gap: 22px;
 }
 
 .gallery-column {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  min-width: 0;
   gap: 22px;
 }
 
@@ -61,29 +62,6 @@ main {
 
 .gallery-photo:hover img {
   transform: scale(1.03);
-}
-
-/* Tablet */
-@media (max-width: 900px){
-    .gallery-photos{
-        flex-wrap: wrap;
-    }
-
-    .gallery-column {
-        flex-basis: calc(50% - 11px);
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px){
-    .gallery-photos{
-        flex-direction: column;
-    }
-
-    .gallery-column {
-        flex-basis: auto;
-        width: 100%;
-    }
 }
 
 .container-gallery{
@@ -265,21 +243,85 @@ main {
   background: #079669;
 }
 
+@media (max-width: 900px) {
+    .gallery-container {
+        padding-top: 20px;
+    }
+
+    .gallery-photos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .gallery-column {
+        gap: 18px;
+    }
+
+    .gallery-column:nth-child(3) {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .swiper-slide {
+        width: clamp(260px, 45vw, 340px);
+    }
+
+    .container-gallery.swiper {
+        margin-bottom: 44px;
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        padding-bottom: 24px;
+    }
+
+    .gallery-photos,
+    .gallery-column:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+
+    .swiper-slide {
+        width: min(100%, 330px);
+    }
+
+    .container-gallery.swiper {
+        margin-bottom: 34px;
+        padding: 24px 38px 46px;
+        border-radius: 12px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 38px;
+        height: 38px;
+    }
+
+    .swiper-button-prev {
+        left: 8px;
+    }
+
+    .swiper-button-next {
+        right: 8px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 480px) {
 
     .swiper-slide {
-        width: 86%;
+        width: 100%;
     }
 
     .card-list-gallery .card-item-gallery .card-link-gallery {
         width: 100%;
-    }
-
-    .container-gallery {
-        margin-bottom: 34px;
-        padding: 24px 0 34px;
-        min-height: auto;
-        border-radius: 12px;
     }
 
     .swiper {
