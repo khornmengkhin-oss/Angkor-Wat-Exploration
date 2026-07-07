@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages/visit.css">
   <script src="../js/navigation.js" defer></script>
-  <script src="../js/visit.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +41,7 @@
     <section class="page-hero">
       <div>
         <h1>Visit</h1>
-        <p>Planning to visit Angkor Wat? Below is everything you need to know for a great memorable experience.</p>
+        <p>Planning to visit Angkor Wat? Below is everything you need to know for a memorable experience.</p>
         <div class="breadcrumbs" aria-label="Breadcrumb">
           <a href="../index.html">Home</a>
           <span>/</span>
@@ -51,91 +50,62 @@
       </div>
     </section>
 
-
-    <section class="section-space page-shell visit-route-section">
+    <section class="section-space page-shell visit-intro-section">
       <div class="section-heading">
         <p class="eyebrow">DIVE DEEPER INTO ANGKOR WAT</p>
         <h2>Explore the Timeless World of Angkor Wat</h2>
         <p>Discover its history, sacred architecture, and everything you need to plan an unforgettable visit.</p>
       </div>
+    </section>
 
-      <div class="route-planner-card">
-        <form class="form-panel" aria-label="Explore Angkor Wat topics">
-          <div class="form-field">
-            <label for="visit-date">Visit date</label>
-            <input id="visit-date" name="visit-date" type="date">
+    <section class="section-space visit-contact-section">
+      <div class="page-shell visit-contact-layout">
+        <aside class="visit-map-card" aria-label="Map to Angkor Wat">
+          <img src="../images/Angkorwat map.png" alt="Map image showing the route area around Siem Reap and Angkor Wat">
+          <div class="visit-map-card__body">
+            <h3>Map to Angkor Wat</h3>
+            <p>Angkor Wat is located just north of Siem Reap, within the Angkor Archaeological Park. Use this map to find the temple easily and plan your route from the city or nearby landmarks.</p>
           </div>
-          <div class="form-field">
-            <label for="pace">Guide focus</label>
-            <select id="pace" name="pace">
-              <option>Sunrise route</option>
-              <option>Half day</option>
-              <option>Full day</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="travelers">Visitors</label>
-            <input id="travelers" name="travelers" type="number" min="1" value="2">
-          </div>
-          <button class="button" type="submit">Find Route</button>
-        </form>
+        </aside>
 
-        <div class="route-tips" aria-label="Useful visit tips">
-          <span><span class="tip-dot" aria-hidden="true"></span>Best light: 5:30 AM</span>
-          <span><span class="tip-dot" aria-hidden="true"></span>Temple pass ready</span>
-          <span><span class="tip-dot" aria-hidden="true"></span>Respectful dress</span>
+        <div class="contact-box">
+          <h2 class="form-title">Drop Us a Line</h2>
+          <p class="form-subtitle">If you have any other concerns, please feel free to reach out to us by filling out the form below.</p>
+          <div class="orange-divider"></div>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label>YOUR NAME</label>
+                <input type="text" placeholder="Jane Smith">
+              </div>
+              <div class="form-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" placeholder="jane@example.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>SUBJECT LINE</label>
+              <input type="text" placeholder="How can we help?">
+            </div>
+
+            <div class="form-group">
+              <label>YOUR MESSAGE</label>
+              <textarea placeholder="Tell us what's on your mind..."></textarea>
+            </div>
+
+            <button type="submit" class="dispatch-btn">
+              <span>Dispatch Message</span>
+              <span class="arrow-icon">→</span>
+            </button>
+          </form>
         </div>
       </div>
     </section>
   </main>
-  <section class="section-space visit-contact-section">
-    <div class="page-shell visit-contact-layout">
-      <aside class="visit-map-card" aria-label="Map to Angkor Wat">
-        <img src="../images/Angkorwat map.png" alt="Map image showing the route area around Siem Reap and Angkor Wat">
-        <div class="visit-map-card__body">
-          <h3>Map to Angkor Wat</h3>
-          <p>Angkor Wat is located just north of Siem Reap, within the Angkor Archaeological Park. Use this map to find the temple easily and plan your route from the city or nearby landmarks.</p>
-        </div>
-      </aside>
 
-      <div class="contact-box">
-            <h2 class="form-title">Drop Us a Line</h2>
-            <p class="form-subtitle">If you have any other concerns, please feel free to reach out to us by filling out the form below.</p>
-            <div class="orange-divider"></div>
-
-            <form>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>YOUR NAME</label>
-                        <input type="text" placeholder="Jane Smith">
-                    </div>
-                    <div class="form-group">
-                        <label>EMAIL ADDRESS</label>
-                        <input type="email" placeholder="jane@example.com">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>SUBJECT LINE</label>
-                    <input type="text" placeholder="How can we help?">
-                </div>
-
-                <div class="form-group">
-                    <label>YOUR MESSAGE</label>
-                    <textarea placeholder="Tell us what's on your mind..."></textarea>
-                </div>
-
-                <button type="submit" class="dispatch-btn">
-                    <span>Dispatch Message</span>
-                    <span class="arrow-icon">→</span>
-                </button>
-            </form>
-        </div>
-      </div>
-
-    </section>
-
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="site-footer__inner site-footer__inner--centered site-footer__bottom">
       <div>
         <h2>Angkor Wat Guide</h2>
