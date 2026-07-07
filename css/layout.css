@@ -163,6 +163,11 @@
   text-align: center;
 }
 
+.site-footer__inner--centered,
+.site-footer__inner.site-footer__bottom {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .site-header {
     position: fixed;
