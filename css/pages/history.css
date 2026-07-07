@@ -129,7 +129,7 @@ a {
   flex-direction: row-reverse;
 }
 
-/*This is for the arrow in the link to another pages*/
+/*This is for the arrow to link to another pages*/
 .link {
   color: var(--color-primary);
   font-weight: 600;
