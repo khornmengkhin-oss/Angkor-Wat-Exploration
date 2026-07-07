@@ -1,8 +1,10 @@
 /* Architecture page */
+/*Background color set from the global css */
 main {
   background-color: var(--color-background-add);
 }
 
+/*Basic styling for the elements*/
 main p {
   color: rgba(255, 255, 255, 0.76);
 }
@@ -36,11 +38,13 @@ strong {
   color: rgba(255, 255, 255, 0.76);
 }
 
+/*First Container*/
 .overview {
   width: min(calc(100% - 40px), var(--container));
   margin: 0 auto;
 }
 
+/*Styling for the first Hero section*/
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -72,9 +76,11 @@ strong {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 
+/*Grid for the card*/
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  /*3d model on top, taking up 3 */
   grid-template-areas:
     "card-left card-left card-left"
     "card1 card2 card3"
@@ -85,6 +91,7 @@ strong {
   margin: var(--space-5) 0 var(--space-7);
 }
 
+/*Define the grid area because I use grid-template-areas*/
 .card-left {
   grid-area: card-left;
 }
@@ -121,6 +128,7 @@ strong {
   grid-area: pic3;
 }
 
+/*Border+transition for cards*/
 .card,
 .info-card-architecture {
   background-color: var(--color-surface);
@@ -130,6 +138,7 @@ strong {
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
+/*This is the container for the 3d model*/
 .main-card {
   width: 100%;
   padding: var(--space-5);
@@ -139,6 +148,7 @@ strong {
   box-shadow: var(--shadow-soft);
 }
 
+/*The 3d model*/
 .model {
   width: 100%;
   height: clamp(430px, 70vh, 760px);
@@ -160,6 +170,7 @@ strong {
   color: #555555;
 }
 
+/*Setting hover for the 3d model and the cards*/
 .main-card:hover,
 .card:hover,
 .info-card-architecture:hover {
@@ -168,6 +179,7 @@ strong {
   transform: translateY(-5px);
 }
 
+/*The direct container for 3d model*/
 .model-container {
   width: 100%;
   display: grid;
@@ -189,6 +201,7 @@ strong {
   color: #555555;
 }
 
+/*Making the pic in cards of Overview appear the same size*/
 .pic,
 .pic1,
 .pic2,
@@ -247,6 +260,7 @@ strong {
   margin-bottom: var(--space-3);
 }
 
+/*Media query for different devices*/
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
