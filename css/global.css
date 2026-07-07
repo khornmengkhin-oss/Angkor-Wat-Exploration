@@ -15,6 +15,7 @@
   --color-temple: #243b35;
   --color-footer: #031415;
   --color-bacground-add: #1A1411;
+  --color-background-add: var(--color-bacground-add);
 
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Source Serif 4', serif;

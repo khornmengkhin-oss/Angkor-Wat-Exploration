@@ -59,34 +59,42 @@
         <p>Discover its history, sacred architecture, and everything you need to plan an unforgettable visit.</p>
       </div>
 
-      <form class="form-panel" aria-label="Explore Angkor Wat topics">
-        <div class="form-field">
-          <label for="visit-date">Visit date</label>
-          <input id="visit-date" name="visit-date" type="date">
+      <div class="route-planner-card">
+        <form class="form-panel" aria-label="Explore Angkor Wat topics">
+          <div class="form-field">
+            <label for="visit-date">Visit date</label>
+            <input id="visit-date" name="visit-date" type="date">
+          </div>
+          <div class="form-field">
+            <label for="pace">Guide focus</label>
+            <select id="pace" name="pace">
+              <option>Sunrise route</option>
+              <option>Half day</option>
+              <option>Full day</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="travelers">Visitors</label>
+            <input id="travelers" name="travelers" type="number" min="1" value="2">
+          </div>
+          <button class="button" type="submit">Find Route</button>
+        </form>
+
+        <div class="route-tips" aria-label="Useful visit tips">
+          <span><span class="tip-dot" aria-hidden="true"></span>Best light: 5:30 AM</span>
+          <span><span class="tip-dot" aria-hidden="true"></span>Temple pass ready</span>
+          <span><span class="tip-dot" aria-hidden="true"></span>Respectful dress</span>
         </div>
-        <div class="form-field">
-          <label for="pace">Guide focus</label>
-          <select id="pace" name="pace">
-            <option>Sunrise route</option>
-            <option>Half day</option>
-            <option>Full day</option>
-          </select>
-        </div>
-        <div class="form-field">
-          <label for="travelers">Visitors</label>
-          <input id="travelers" name="travelers" type="number" min="1" value="2">
-        </div>
-        <button class="button" type="submit">Find Route</button>
-      </form>
+      </div>
     </section>
   </main>
-  <section class="section-space page-shell visit-contact-section">
-    <div class="visit-contact-layout">
+  <section class="section-space visit-contact-section">
+    <div class="page-shell visit-contact-layout">
       <aside class="visit-map-card" aria-label="Map to Angkor Wat">
         <img src="../images/Angkorwat map.png" alt="Map image showing the route area around Siem Reap and Angkor Wat">
         <div class="visit-map-card__body">
           <h3>Map to Angkor Wat</h3>
-          <p>Use this temple area map as a visual guide before planning your route to Angkor Wat.</p>
+          <p>Angkor Wat is located just north of Siem Reap, within the Angkor Archaeological Park. Use this map to find the temple easily and plan your route from the city or nearby landmarks.</p>
         </div>
       </aside>
 

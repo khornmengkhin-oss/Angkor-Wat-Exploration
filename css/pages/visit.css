@@ -3,20 +3,76 @@ main p {
 }
 
 .visit-route-section {
-    min-height: 220px;
-    display: grid;
-    align-items: center;
-    padding-top: 64px;
-    padding-bottom: 64px;
+  scroll-margin-top: 92px;
+  width: 100%;
+  max-width: none;
+  min-height: 690px;
+  padding: 96px 24px 84px;
+  background: #fbfaf6;
+  border-bottom: 1px solid rgba(187, 152, 54, 0.14);
 }
 
 .visit-route-section .form-panel {
-    margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+  grid-template-columns: 1.25fr 1fr 0.95fr auto;
+  gap: 12px;
+  background: #202421;
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(31, 33, 31, 0.32);
+}
+
+.visit-route-section .section-heading {
+  margin-bottom: 58px;
+}
+
+.visit-route-section .section-heading h2 {
+  margin-bottom: 18px;
+}
+
+.visit-route-section .section-heading p:not(.eyebrow) {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.route-planner-card {
+  width: min(100%, 1234px);
+  margin: 0 auto;
+}
+
+.visit-route-section .form-field label {
+  margin-bottom: 4px;
+}
+
+.visit-route-section .form-field input,
+.visit-route-section .form-field select {
+  min-height: 70px;
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.visit-route-section .form-field input:focus,
+.visit-route-section .form-field select:focus {
+  border-color: #bb9836;
+  outline: none;
+}
+
+.visit-route-section .form-panel > .button {
+  min-height: 70px;
+  padding-left: 44px;
+  padding-right: 44px;
+  background: #d0aa3b;
+  border-color: #d0aa3b;
+  box-shadow: 0 16px 34px rgba(187, 152, 54, 0.25);
 }
 
 .visit-contact-section {
     padding-top: 72px;
     padding-bottom: 92px;
+    background-color: var(--color-background-add);
 }
 
 .visit-contact-layout {
@@ -171,13 +227,14 @@ main p {
 
 @media (max-width: 900px) {
   .visit-route-section {
-        padding-top: 56px;
-        padding-bottom: 56px;
-    }
+    min-height: auto;
+    padding-top: 62px;
+    padding-bottom: 68px;
+  }
 
   .visit-route-section .form-panel {
-        width: 100%;
-    }
+    grid-template-columns: 1fr 1fr;
+  }
 
   .visit-contact-layout {
         grid-template-columns: 1fr;
@@ -195,10 +252,36 @@ main p {
 
 @media (max-width: 600px) {
   .visit-route-section {
-        min-height: auto;
-        padding-top: 44px;
-        padding-bottom: 44px;
-    }
+    padding-top: 96px;
+    padding-bottom: 54px;
+  }
+
+  .visit-route-section .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .visit-route-section .section-heading h2 {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 29px;
+    line-height: 1.08;
+  }
+
+  .visit-route-section .form-panel {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .route-tips {
+    justify-content: flex-start;
+  }
+
+  .route-tips span {
+    width: 100%;
+    justify-content: center;
+  }
 
   .form-row {
         flex-direction: column;

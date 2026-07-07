@@ -335,6 +335,10 @@
 
 /*These properties are for showing images for grapping attention*/
 
+#temple-showcase {
+  background-color: var(--color-bacground-add);
+}
+
 .image-showcase {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -345,7 +349,6 @@
   position: relative;
   min-height: 300px;
   overflow: hidden;
-  box-shadow: var(--shadow-strong);
   isolation: isolate;
 }
 
