@@ -18,16 +18,19 @@
   <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
+  <!--This one is for the site header -->
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
 
+      <!-- Navigation button -->
       <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </button>
 
+      <!--navigation-->
       <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <a href="history.html">History</a>
@@ -39,11 +42,13 @@
   </header>
 
   <main>
+    <!--First hero section-->
     <section class="page-hero">
       <div>
         <h1>Architecture</h1>
         <p>Explore the towers, galleries, moat, bas-reliefs, and sacred geometry that shape Angkor Wat.</p>
         <div class="breadcrumbs" aria-label="Breadcrumb">
+          <!--Link back to home-->
           <a href="../index.html">Home</a>
           <span>/</span>
           <span>Architecture</span>
@@ -51,8 +56,13 @@
       </div>
     </section>
 
+    <!--The Overview Section-->
     <section class="overview">
+
+      <!--Another mini hero section but uses image instead of css background image-->
       <div class="hero">
+
+        <!--The text content-->
         <div class="hero-text">
           <p class="eyebrows">Angkor Wat</p>
           <h2>Architectural Overview</h2>
@@ -62,77 +72,93 @@
 
           Overall, the temple's layout, dimensions, and alignments have led to many deeper symbolic interpretations.</p>
         </div>
+        <!--The image-->
         <div class="hero-img">
           <img src="../images/AngkorwatAboveshot.jpg" alt="Overview of Angkor Wat temple in Cambodia">
-          
         </div>
       </div>
       
-        
-      
+      <!--Grid for architectural features-->
       <div class="grid">
+        
+        <!--Main card, for the 3D model-->
         <div class="main-card card-left">
+          <!--The 3d model container-->
           <div class="model-container">
             <h3>Site Plan</h3>
             <p>A 3D model of Angkor Wat's land site</p>
+            <!--The 3d model, using model-viewer-->
             <model-viewer class="model" alt="angkorModel" src="../images/angkor_wat_temple_cambodia.glb"
             autoplay
             camera-controls
             touch-action="pan-y"
-            h
             >
             </model-viewer>
           </div>
         </div>
 
+        <!--Cards for moat and boundary-->
         <div class="card card1">
           <h3>Moat and Boundary</h3>
           <p>The outer water enclosure frames the complex and separates the temple from the surrounding landscape.</p>
         </div>
 
-         <div class="pic">
+        <!--Image for moat and boundary-->
+        <div class="pic">
           <img src="../images/overview-complex-Angkor-Wat-Cambodia.webp" alt="Moat and Boundary of Angkor Wat temple in Cambodia">
         </div>
 
+        <!--Card for outer enclosure-->
         <div class="card card2">
           <h3>Outer Enclosure</h3>
           <p>The first major built perimeter establishes scale and begins the progression inward.</p>
         </div>
 
+        <!--Image for outer enclosure-->
         <div class="pic1">
           <img src="../images/outerEnclosure.jpg" alt="OuterEnclosure-Angkor-Wat-Cambodia">
         </div>
 
+        <!--Card for inner galleries-->
         <div class="card card3">
           <h3>Inner Galleries</h3>
           <p>Long gallery spaces create circulation, rhythm, and layered movement through the temple.</p>
         </div>
-        
+
+        <!--Image for inner galleries-->
         <div class="pic2">
           <img src="../images/innerGallery.jpg" alt="Inner Galleries of Angkor Wat temple in Cambodia">
         </div>
 
-        <div class="pic3">
-          <img src="../images/centralTowersAngkkor.jpg" alt="Central Towers of Angkor Wat temple in Cambodia">
-        </div>
+        <!--Card for central towers-->
         <div class="card card4">
           <h3>Central Towers</h3>
           <p>Five towers rise above the temple, creating the famous lotus-bud silhouette.</p>
         </div>
 
+         <!--Image for central towers-->
+        <div class="pic3">
+          <img src="../images/centralTowersAngkkor.jpg" alt="Central Towers of Angkor Wat temple in Cambodia">
+        </div>
       </div>
     </section>
 
+    <!--Divide the section-->
     <hr class="divider">
     
+    <!--Another section for architectural Elements, container for section-heading and card-grid-->
     <section class="section-space page-shell">
+
+      <!--The title and some texts-->
       <div class="section-heading">
         <p class="eyebrows">Main Architectural Elements</p>
         <h2>What makes Angkor Wat unique?</h2>
         <p>The temple's main elements include the <em>causeway</em>, <em>galleries</em>, <em>courtyards and platforms</em>, and <em>towers and stairways</em> </p>
       </div>
 
+      <!--The grid cards for architectural elements-->
       <div class="card-grid">
+        <!--Card for causeway-->
         <article id="causeway" class="info-card-architecture">
           <div class="card-grid_image">
             <img class="card-grid_image" src="../images/AngkorWatCauseway.jpg" alt="Causeway of Angkor Wat temple in Cambodia">
@@ -140,16 +166,19 @@
           <h3>Causeway</h3>
           <p>192 meters long and 11.6 meters wide, made out of sandstone blocks, it connects the temple approach to the main enclosure and helps guide movement along the central axis. It leads visitors from the western entrance across the water to the main temple complex.</p>
         </article>
+        <!--Card for galleries-->
         <article id="galleries" class="info-card-architecture">
           <img class="card-grid_image" src="../images/AngkorWatGalleries.jpg" alt="Galleries of Angkor Wat temple in Cambodia">
           <h3>Galleries</h3>
           <p>Combine the tiered pyramidal structure of a temple-mountain with South Indian-inspired concentric corridors. Three raised, rectangular galleries wrap around the central quincunx of towers, acting as structural borders for the stepped terraces and serving as a physical manifestation of Mount Meru.</p>
         </article>
+        <!--Card for courtyards and platforms-->
         <article id="courtyards" class="info-card-architecture">
           <img class="card-grid_image" src="../images/AngkorwatCourtyard.jpeg" alt="Courtyards and Platforms of Angkor Wat temple in Cambodia">
           <h3>Courtyards and Platforms</h3>
           <p>nested, concentric square enclosures that progressively elevate toward a central quincunx of towers. Featuring cruciform layouts, colonnaded galleries, and traditional libraries, these spaces were intricately designed to mirror Hindu cosmology.</p>
         </article>
+        <!--Card for towers and stairways-->
         <article id="towers" class="info-card-architecture">
           <img class="card-grid_image" src="../images/20191210-angkor-wat-tower-stairs-2-b2d6ff-1024.jpg" alt="Towers and Stairways of Angkor Wat temple in Cambodia">
           <h3>Towers and Stairways</h3>
@@ -157,15 +186,18 @@
         </article>
       </div>
     </section>
-    
   </main>
 
-    <footer class="site-footer">
+  <!--The footer-->
+  <footer class="site-footer">
     <div class="site-footer__inner site-footer__inner--centered site-footer__bottom">
+      <!--The footer text content-->
       <div>
         <h2>Angkor Wat Guide</h2>
         <p>A student-friendly digital guide for Cambodia's most treasured temple complex.</p>
       </div>
+
+      <!--navigation to other pages-->
       <div>
         <h3>Explore</h3>
         <ul>
@@ -174,6 +206,7 @@
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
+      <!--Visit information-->
       <div>
         <h3>Visit</h3>
         <ul>
@@ -182,15 +215,17 @@
           <li><a href="visit.html">Respectful travel</a></li>
         </ul>
       </div>
+      <!--Some subtle notes-->
       <div>
         <h3>Project</h3>
         <p>Built with HTML and CSS using shared root elements and reusable components.</p>
       </div>
     </div>
+    <!--Basic Footer-->
     <div class="site-footer__bottom">
       <p>&copy; 2026 Angkor Wat Digital Guide. Educational project website.</p>
     </div>
   </footer>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+  <script src="architecture.js"></script>
 </body>
 </html>
