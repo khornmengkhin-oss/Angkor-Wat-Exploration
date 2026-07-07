@@ -1,10 +1,13 @@
 /* this file is only for history page */
+
+/* This is for reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
 }
 
+/*This is apply for the whole page for what it looks like*/
 body {
   color: #1a1a1a;
   line-height: 1.7;
@@ -23,29 +26,14 @@ h2 {
   font-weight: 700px;
 }
 
+/*Make all the images have block level*/
 img {
   display: block;
   width: 100%;
   height: auto; 
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.hero-title {
-  color: #ffffff;
-  text-align: center;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 500;
-  margin: 60px 0 50px;
-}
-
+/*The large single image in the "Decline & Abandonment" section*/
 .image-about {
   margin-top: 20px;
   width: 100%;
@@ -53,12 +41,35 @@ a {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*This is for title*/
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 60px 0 50px;
+}
+
+/*The large single image in the "Decline & Abandonment" section*/
+.image-about {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/*Make the outer wrapper for each timeline section*/
 .timeline {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/*Make one row of the timeline = image on one side, text on the other*/
 .timeline-block {
   display: flex;
   gap: 50px;
@@ -66,14 +77,17 @@ a {
   margin: 60px 60px;
 }
 
+/*The text column inside a timeline row*/
 .timeline-text {
   flex: 1;
 }
 
+/*Make h2 in the timeline text column bold*/
 .timeline-text h2 {
   font-weight: 700px;
 }
 
+/*Apply styles to h3 elements in the timeline text column "The subheading"*/
 .timeline-text h3 {
   font-size: 22px;
   font-weight: 700;
@@ -81,20 +95,18 @@ a {
   margin-bottom: 14px;
 }
 
+/*Apply styles to p elements in the timeline text column*/
 .timeline-text p {
   font-size: 14px;
   color: #444;
 }
 
-.timeline-image {
-  flex: 1;
-  border-radius: var(--radius-md);
-}
-
+/*Centres the small "Empire's Fall" label above the "Decline & Abandonment" heading*/
 #eyebrow-main {
   text-align: center;
 }
 
+/*The framed image container in the timeline rows*/
 .showcase-card {
   position: relative;
   width: 100%;
@@ -105,58 +117,67 @@ a {
   isolation: isolate;
 }
 
-.showcase-card img,
-.timeline-image img {
+.showcase-card img {
   width: 100%;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   
 }
 
+/*For reversed timeline sections: flips the row order so the image sits on the opposite side*/
 .timeline--reverse .timeline-block {
   flex-direction: row-reverse;
 }
 
+/*This is for the arrow to link to another pages*/
 .link {
   color: var(--color-primary);
   font-weight: 600;
   text-decoration: none;
 }
 
+/*Make the arrow happen and have transition*/
 .link .arrow {
   display: inline-block;
   transition: transform 0.3s;
 }
 
+/*Can hover over the arrow*/
 .link:hover .arrow {
   transform: translateX(6px);
 }
 
+/*Makes the heading white when it sits inside a dark*/
 .background-section .section-heading h2 {
   color: #ffffff;
 }
 
+/*This media is make for tablet screens*/
 @media screen and (max-width: 900px) {
   .section-title,
   .timeline {
     width: min(calc(100% - 40px), 900px);
   }
 
+  /*Shrink and re-centre the intro title*/
   .section-title {
     font-size: 26px;
     margin: 40px auto 30px;
     text-align: center;
   }
 
+  /*Heading sizes at this breakpoint*/
   .section-title h2,
   .timeline-text h2 {
     font-size: 34px;
   }
 
+  /*Remove side padding since width already handles spacing*/
   .timeline {
     padding: 0;
   }
 
+  /*Stack image over text instead of side by side*/
   .timeline-block,
   .timeline--reverse .timeline-block {
     flex-direction: column;
@@ -165,14 +186,14 @@ a {
     align-items: center;
   }
 
-  .showcase-card,
-  .timeline-image {
+  /*Image containers go full width on tablet*/
+  .showcase-card {
     width: 100%;
     max-width: 680px;
   }
 
-  .showcase-card img,
-  .timeline-image img {
+  /*Give stacked images a flexible*/
+  .showcase-card img {
     width: 100%;
     height: clamp(260px, 42vw, 340px);
     object-fit: cover;
@@ -209,6 +230,7 @@ a {
   }
 }
 
+/*This media make for mobile screens: Still the same as media 900, but Just make it fit*/
 @media screen and (max-width: 600px) {
   .section-title,
   .timeline {
@@ -235,13 +257,11 @@ a {
     align-items: stretch;
   }
 
-  .showcase-card,
-  .timeline-image {
+  .showcase-card {
     max-width: 100%;
   }
 
-  .showcase-card img,
-  .timeline-image img {
+  .showcase-card img {
     height: 220px;
   }
 
