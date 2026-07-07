@@ -1,7 +1,15 @@
 /* Architecture page */
+main {
+  background-color: var(--color-background-add);
+}
 
 main p {
-  color: #555555;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+main h2,
+main h3 {
+  color: #ffffff;
 }
 
 strong {
@@ -12,7 +20,7 @@ strong {
   width: min(calc(100% - 40px), var(--container));
   margin: 55px auto 30px;
   border: 0;
-  border-top: 1px solid rgba(17, 24, 39, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .eyebrows {
@@ -24,6 +32,10 @@ strong {
   text-transform: uppercase;
 }
 
+.section-heading p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
 .overview {
   width: min(calc(100% - 40px), var(--container));
   margin: 0 auto;
@@ -31,7 +43,7 @@ strong {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: clamp(var(--space-5), 4vw, var(--space-8));
   padding: var(--space-7) 0;
@@ -40,7 +52,7 @@ strong {
 .hero .hero-text {
   max-width: 680px;
   margin: 0;
-  color: var(--color-text);
+  color: #ffffff;
   text-align: left;
 }
 
@@ -121,6 +133,10 @@ strong {
 .main-card {
   width: 100%;
   padding: var(--space-5);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
 }
 
 .model {
@@ -141,6 +157,7 @@ strong {
 
 .card p {
   margin-bottom: 0;
+  color: #555555;
 }
 
 .main-card:hover,
@@ -162,6 +179,14 @@ strong {
 .model-container h3,
 .model-container p {
   margin-bottom: 0;
+}
+
+.model-container h3 {
+  color: var(--color-ink);
+}
+
+.model-container p {
+  color: #555555;
 }
 
 .pic,
@@ -189,26 +214,20 @@ strong {
   overflow: hidden;
 }
 
+#towers {
+  grid-column: 2;
+}
+
 .info-card-architecture h3 {
   margin-top: var(--space-3);
+  color: var(--color-ink);
 }
 
 .info-card-architecture p {
   margin-bottom: 0;
+  color: #555555;
 }
 
-.icon-mark {
-  display: inline-grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  margin-bottom: var(--space-4);
-  color: #ffffff;
-  background-color: var(--color-primary);
-  border-radius: 50%;
-  font-family: var(--font-eyebrow);
-  font-weight: 800;
-}
 
 .card-grid_image {
   width: 100%;
@@ -270,6 +289,12 @@ strong {
     gap: var(--space-4);
   }
 
+  #towers {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, calc((100% - var(--space-4)) / 2));
+  }
+
   .info-card-architecture {
     padding: var(--space-5);
   }
@@ -313,6 +338,10 @@ strong {
     margin-right: auto;
   }
 
+  #towers {
+    width: 100%;
+  }
+
   .info-card-architecture {
     display: grid;
     gap: var(--space-3);
@@ -320,11 +349,6 @@ strong {
     border-radius: 16px;
   }
 
-  .icon-mark {
-    width: 38px;
-    height: 38px;
-    margin-bottom: 0;
-  }
 
   .info-card-architecture h3 {
     margin: 0;
