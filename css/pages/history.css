@@ -24,7 +24,7 @@
   display: flex;
   gap: 50px;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 60px 60px;
 }
 
 .timeline-text {
@@ -41,7 +41,6 @@
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 14px;
-  text-align: center;
 }
 
 .timeline-text p {
@@ -51,7 +50,11 @@
 
 .timeline-image {
   flex: 1;
-  border-radius: 18px;
+  border-radius: var(--radius-md);
+}
+
+#eyebrow-main {
+  text-align: center;
 }
 
 .showcase-card {
@@ -67,6 +70,9 @@
 .showcase-card img,
 .timeline-image img {
   width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  
 }
 
 .timeline--reverse .timeline-block {
