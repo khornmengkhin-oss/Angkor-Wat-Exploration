@@ -1,3 +1,5 @@
+/*These properties are for hero section or landing*/
+
 .home-hero {
   min-height: 100vh;
   display: grid;
@@ -52,31 +54,6 @@
   font-size: 16px;
 }
 
-.intro-info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-6);
-}
-
-.intro-logo {
-  flex: 1 1 420px;
-  display: flex;
-  justify-content: center;
-  min-width: 280px;
-}
-
-.image-about {
-  width: clamp(320px, 34vw, 460px);
-  height: auto;
-}
-
-.intro-about {
-  flex: 1 1 520px;
-  width: min(100%, 600px);
-}
-
 .home-stats {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -110,15 +87,54 @@
   font-weight: 900;
 }
 
+/*These properties are for about us section*/
+
+.intro-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.intro-logo {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.image-about {
+  width: clamp(320px, 34vw, 460px);
+  height: auto;
+}
+
+.intro-about {
+  flex: 1 1 520px;
+  width: min(100%, 600px);
+}
+
+/*This property is for King soriya background image */
+
+.intro-big {
+  height: 70vh;
+  background-image: url("../../images/the king soraya.png");
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
+
+/*These properties are for big intro for the web page*/
+
+.intro-media {
+  position: relative;
+}
+
 .intro-layout {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   align-items: center;
   gap: var(--space-7);
-}
-
-.intro-media {
-  position: relative;
 }
 
 .intro-media img {
@@ -130,13 +146,33 @@
   filter: brightness(1.12) saturate(1.16) contrast(1.02);
 }
 
-.intro-big {
-  height: 70vh;
-  background-image: url("../../images/the king soraya.png");
-  background-size: cover;
-  background-position: center 35%;
-  background-repeat: no-repeat;
+.experience-box {
+  position: absolute;
+  right: var(--space-5);
+  bottom: calc(var(--space-5) * -1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  background-color: var(--color-primary);
+  box-shadow: var(--shadow-strong);
 }
+
+.experience-box strong {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.experience-box span {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/*These properties are for video explanation (inframe)*/
 
 .video-showcase {
   display: flex;
@@ -308,70 +344,13 @@
   outline-offset: 4px;
 }
 
+/*These properties are for cards showing brief info*/
+
 .info-card--middle {
   transform: translateY(20px);
 }
 
-.experience-box {
-  position: absolute;
-  right: var(--space-5);
-  bottom: calc(var(--space-5) * -1);
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-4) var(--space-5);
-  border-radius: var(--radius-md);
-  color: #ffffff;
-  background-color: var(--color-primary);
-  box-shadow: var(--shadow-strong);
-}
-
-.experience-box strong {
-  font-size: 34px;
-  line-height: 1;
-}
-
-.experience-box span {
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.intro-copy p:last-child {
-  margin-bottom: 0;
-}
-
-.visit-band {
-  width: 100vw;
-  color: #ffffff;
-  background:
-    linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
-    url("../../images/The god temple-Angkor Wat.png");
-  background-position: center 27.5%;
-  background-size: cover;
-}
-
-.visit-band__inner {
-  width: min(calc(100% - 40px), var(--container));
-  margin: 0 auto;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: var(--space-6);
-}
-
-.visit-band h2,
-.visit-band p {
-  color: #ffffff;
-}
-
-.visit-band p {
-  max-width: 650px;
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.82);
-}
+/*These properties are for showing images for grapping attention*/
 
 .image-showcase {
   display: grid;
@@ -461,6 +440,47 @@
   line-height: 1;
 }
 
+/*These properties are for visit band*/
+
+.visit-band {
+  width: 100vw;
+  color: #ffffff;
+  background:
+    linear-gradient(180deg, rgba(5, 11, 10, 0.32) 0%, rgba(4, 24, 21, 0.3) 48%, rgba(4, 74, 62, 0.58) 100%),
+    url("../../images/The god temple-Angkor Wat.png");
+  background-position: center 27.5%;
+  background-size: cover;
+}
+
+.visit-band__inner {
+  width: min(calc(100% - 40px), var(--container));
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.visit-band h2,
+.visit-band p {
+  color: #ffffff;
+}
+
+.visit-band p {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/*This properties is used by both the about us section and big intro*/
+
+.intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/*This is for responsiveness max width 900px*/
+
 @media (max-width: 900px) {
   .home-hero {
     min-height: auto;
@@ -504,6 +524,8 @@
     transform: none;
   }
 }
+
+/*This of responsive max width 600px*/
 
 @media (max-width: 600px) {
   .home-hero {
