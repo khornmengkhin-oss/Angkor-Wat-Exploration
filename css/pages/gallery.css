@@ -1,11 +1,11 @@
-/* this file is only for gallery page */
+/*This file is only for the gallery page*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 *{
   margin: 0;
   padding: 0;
 }
-
+/*These properties are for the gallery page base spacing, text, and background colors*/
 main p {
   color: #555555;
 }
@@ -22,6 +22,7 @@ main {
   color: rgba(255, 255, 255, 0.76);
 }
 
+/*These properties are for the masonry-style photo gallery layout*/
 .gallery-container {
   position: relative;
   z-index: 2;
@@ -64,6 +65,7 @@ main {
   transform: scale(1.03);
 }
 
+/*These properties are for the Swiper carousel shell, overlay, slides, and controls*/
 .container-gallery{
   position: relative;
   z-index: 1;
@@ -177,6 +179,7 @@ main {
   overflow: hidden;
 }
 
+/*These properties are for the carousel image cards*/
 .card-list-gallery .card-item-gallery{
   list-style: none;
 }
@@ -243,6 +246,7 @@ main {
   background: #079669;
 }
 
+/*These properties are for gallery responsiveness on tablet*/
 @media (max-width: 900px) {
     .gallery-container {
         padding-top: 20px;
@@ -274,6 +278,7 @@ main {
     }
 }
 
+/*These properties are for gallery responsiveness on phone*/
 @media (max-width: 600px) {
     .gallery-container {
         padding-bottom: 24px;
@@ -311,35 +316,5 @@ main {
     .swiper-button-next::after,
     .swiper-button-prev::after {
         font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .swiper-slide {
-        width: 100%;
-    }
-
-    .card-list-gallery .card-item-gallery .card-link-gallery {
-        width: 100%;
-    }
-
-    .swiper {
-        padding: 24px 44px 46px;
-    }
-
-    .container-gallery.swiper {
-        padding-left: 38px;
-        padding-right: 38px;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        transform: translateY(-50%) scale(0.8);
-    }
-
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-        transform: translateY(-50%) scale(0.86);
     }
 }

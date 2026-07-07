@@ -1,9 +1,11 @@
+/*Page base*/
 body,
 main,
 .site-footer {
   background-color: var(--color-background-add);
 }
 
+/*Intro section*/
 .visit-intro-section {
   padding-top: 72px;
   padding-bottom: 56px;
@@ -25,6 +27,7 @@ main,
   color: rgba(255, 255, 255, 0.76);
 }
 
+/*Map and contact layout*/
 .visit-contact-section {
   padding-top: 28px;
   padding-bottom: 92px;
@@ -79,6 +82,7 @@ main,
   line-height: 1.6;
 }
 
+/*Contact form*/
 .contact-box {
   width: 100%;
   max-width: none;
@@ -155,6 +159,7 @@ main,
   box-shadow: 0 0 0 3px rgba(187, 152, 54, 0.14);
 }
 
+/*Form button*/
 .dispatch-btn {
   display: inline-flex;
   align-items: center;
@@ -199,6 +204,7 @@ main,
   font-weight: bold;
 }
 
+/*Tablet layout*/
 @media (max-width: 900px) {
   .visit-intro-section {
     padding-top: 64px;
@@ -219,6 +225,7 @@ main,
   }
 }
 
+/*Phone layout*/
 @media (max-width: 600px) {
   .visit-intro-section {
     padding-top: 52px;
