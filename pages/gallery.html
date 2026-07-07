@@ -10,13 +10,18 @@
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages/gallery.css">
+  <script src="../js/navigation.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&family=Source+Serif+4:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
-  <header class="site-header"> 
+  <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">
-        <span class="site-logo__name">Angkor Wat</span>
-      </a>
+      <a class="site-logo" href="../index.html" aria-label="Angkor Wat Digital Guide home">AngkoRism</a>
 
       <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -53,100 +58,113 @@
         <h2>Angkor Wat, The City of Wonder</h2>
         <p>The largest religious monument in the world, Angkor Wat is a UNESCO World Heritage site and a symbol of Cambodia.</p>
       </div>
-      <div class="gallery-container">
-      <div class="gallery-photos">
-        <div class="gallery-column">
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/cambodia.jpg">
-          </div>
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/sculpture/Siem Reap, Cambodia - Your Ultimate Guide to Angkor Wat.jpg" alt="A sunlit passageway at Angkor Wat">
-          </div>
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/Уникальная природа — ирравади дельфины _ Unique Wildlife_ Irrawaddy Dolphins.jpg" alt="A sunlit passageway at Angkor Wat">
-          </div>
-        </div>
 
-        <div class="gallery-column">
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/Khmer Temple - Cambodia.jpg">
-          </div>
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/ankor wat sunrice.jpg">
-          </div>
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/Angkor Wat, Siem Reap, Cambodia.jpg">
-          </div>
-        </div>
-
-        <div class="gallery-column">
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/flying through my bucket list destinations📍.jpg">
-          </div>
-          <div class="gallery-photos">
-            <img src="../images/Gallery_page/Angkor Wat Sunrise.jpg">
-          </div>
-        </div>
-      </div>
-      </div>
-   
       <div class="container-gallery swiper" style="background-image: url(../images/Gallery_page/images\ \(7\).jpg)">
-        <ul class="card-list-gallery swiper-wrapper"> 
+        <ul class="card-list-gallery swiper-wrapper">
           <li class="card-item-gallery swiper-slide">
-            <a href="#" class="card-link-gallery">
-              <img src="../images/Gallery_page/sunrise/equinox.jpg" class="card-image">
+            <article class="card-link-gallery">
+              <img src="../images/Gallery_page/sunrise/equinox.jpg" class="card-image" alt="Angkor Wat sunrise during equinox">
               <p class="badge-gallery">Equinox Angkor</p>
               <h4 class="card-tittle-gallery">The Angkor Wat sunrise phenomenon</h4>
-              <button class="card-button material-symbols-rounded">arrow_forward</button>
-             </a>
+              <button class="card-button material-symbols-rounded" type="button">arrow_forward</button>
+            </article>
           </li>
           <li class="card-item-gallery swiper-slide">
-            <a href="#" class="card-link-gallery">
-              <img src="../images/Gallery_page/surrounding/reflection.png" class="card-image">
+            <article class="card-link-gallery">
+              <img src="../images/Gallery_page/surrounding/reflection.png" class="card-image" alt="Angkor Wat reflected in calm water">
               <p class="badge-gallery">Where Stone Meets the Sky</p>
               <h4 class="card-tittle-gallery">A mirror of calm waters reflects the enduring majesty of Angkor Wat</h4>
-              <button class="card-button material-symbols-rounded">arrow_forward</button>              </a>
+              <button class="card-button material-symbols-rounded" type="button">arrow_forward</button>
+            </article>
           </li>
 
           <li class="card-item-gallery swiper-slide">
-            <a href="#" class="card-link-gallery">
-              <img src="../images/Gallery_page/surrounding/The-magnificent-view-of-Angkor-Wat-Temple-is-enhanced-by-the-presence-of-stunning-palm-trees-in-its-surroundings.jpg" class="card-image">
+            <article class="card-link-gallery">
+              <img src="../images/Gallery_page/surrounding/The-magnificent-view-of-Angkor-Wat-Temple-is-enhanced-by-the-presence-of-stunning-palm-trees-in-its-surroundings.jpg" class="card-image" alt="Palm trees around Angkor Wat temple">
               <p class="badge-gallery">Guardians of Stone</p>
               <h4 class="card-tittle-gallery">Palm trees guarding the timeless beauty of Angkor Wat</h4>
-              <button class="card-button material-symbols-rounded">arrow_forward</button>
-            </a>
+              <button class="card-button material-symbols-rounded" type="button">arrow_forward</button>
+            </article>
           </li>
 
           <li class="card-item-gallery swiper-slide">
-            <a href="#" class="card-link-gallery">
-              <img src="../images/Gallery_page/sculpture/ChatGPT Image Jul 6, 2026, 01_20_08 AM.png" class="card-image">
+            <article class="card-link-gallery">
+              <img src="../images/Gallery_page/sculpture/ChatGPT Image Jul 6, 2026, 01_20_08 AM.png" class="card-image" alt="Angkor Wat carved dancers in stone">
               <p class="badge-gallery">Timeless Dancers</p>
               <h4 class="card-tittle-gallery">Elegant carvings capture the eternal beauty of Angkor's history</h4>
-              <button class="card-button material-symbols-rounded">arrow_forward</button>
-            </a>
+              <button class="card-button material-symbols-rounded" type="button">arrow_forward</button>
+            </article>
           </li>
 
           <li class="card-item-gallery swiper-slide">
-            <a href="#" class="card-link-gallery">
-              <img src="../images/Gallery_page/flying through my bucket list destinations📍.jpg" class="card-image">
+            <article class="card-link-gallery">
+              <img src="../images/Gallery_page/flying through my bucket list destinations📍.jpg" class="card-image" alt="Green path framed by an Angkor Wat doorway">
               <p class="badge-gallery">Guardians of Stone</p>
               <h4 class="card-tittle-gallery">Palm trees guarding the timeless beauty of Angkor Wat</h4>
-              <button class="card-button material-symbols-rounded">arrow_forward</button>              </a>
+              <button class="card-button material-symbols-rounded" type="button">arrow_forward</button>
+            </article>
           </li>
 
           <li class="card-item-gallery swiper-slide">
-            <a href="#" class="card-link-gallery">
-              <img src="../images/unesco-seeklogo.png" class="card-image">
+            <article class="card-link-gallery">
+              <img src="../images/unesco-seeklogo.png" class="card-image" alt="UNESCO World Heritage logo">
               <p class="badge-gallery">World Heritage</p>
               <h4 class="card-tittle-gallery">Angkor Wat is part of the Angkor UNESCO World Heritage Site</h4>
-              <button class="card-button material-symbols-rounded">arrow_forward</button>              </a>
+              <button class="card-button material-symbols-rounded" type="button">arrow_forward</button>
+            </article>
           </li>
         </ul>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-photos">
+          <div class="gallery-column">
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/cambodia.jpg" alt="Aerial view of Angkor Wat surrounded by forest">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/sculpture/Siem Reap, Cambodia - Your Ultimate Guide to Angkor Wat.jpg" alt="Angkor Wat stone sculpture details">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/Уникальная природа — ирравади дельфины _ Unique Wildlife_ Irrawaddy Dolphins.jpg" alt="Angkor Wat statue silhouette at sunset">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/Angkor Wat, Siem Reap.jpg" alt="Angkor Wat temple towers under a clear sky">
+            </div>
+          </div>
+
+          <div class="gallery-column">
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/Khmer Temple - Cambodia.jpg" alt="Khmer temple tower framed by trees">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/ankor wat sunrice.jpg" alt="Crowd watching sunrise at Angkor Wat">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/Angkor Wat, Siem Reap, Cambodia.jpg" alt="Angkor Wat at a colorful sunrise">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/_A Sunlit Passageway_.jpg" alt="Sunlit stone passageway inside Angkor Wat">
+            </div>
+          </div>
+
+          <div class="gallery-column">
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/flying through my bucket list destinations📍.jpg" alt="Green path seen through an Angkor Wat doorway">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/Angkor Wat Sunrise.jpg" alt="Pink sunrise over the Angkor Wat skyline">
+            </div>
+            <div class="gallery-photo">
+              <img src="../images/Gallery_page/sunrise/Angkor Wat Sunrise.jpg" alt="Golden sunrise view of Angkor Wat">
+            </div>
+          </div>
         </div>
       </div>
+
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
       <script src="../js/gallery.js"></script>
     </section>
