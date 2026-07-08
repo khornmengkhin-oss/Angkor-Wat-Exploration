@@ -515,7 +515,7 @@
 
 @media (max-width: 600px) {
   .home-hero {
-    padding: 76px var(--space-4) 96px;
+    padding: 110px var(--space-4) 96px;
   }
 
   .hero-text p {
